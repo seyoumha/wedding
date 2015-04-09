@@ -5,15 +5,17 @@
         .col-md-5.col-md-offset-1
           %h2.text-right Guest books  
           - if @guestbooks.present?
-            - @guestbooks.each do |g|
-              .well.text-container
-                .row
-                  .guestbook-name
-                    = g.name.titleize 
-                .row
-                  .guestbook-msg 
-                    = g.message
-                .clearfix    
-
-
-              
+            - @guestbooks.reverse.each do |g|
+              - if @admin 
+                .well.text-container
+                  .guestbook-name= "#{g.name.titleize} | #{pretify(g.created_at)}"
+                  .guestbook-msg= g.message
+                  .admin_actions
+                    =link_to 'Delete', guestbook_path(g.id), method: :delete, class: 'btn btn-danger btn-xs'
+                    =link_to 'Approve', guestbook_path(g.id), method: :put, class: 'btn btn-primary btn-xs', disabled: g.approved?
+                  .clearfix   
+              - elsif g.approved?
+                .well.text-container
+                  .guestbook-name= "#{g.name.titleize} | #{pretify(g.created_at)}"
+                  .guestbook-msg= g.message
+                  .clearfix

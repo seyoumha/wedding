@@ -48,7 +48,8 @@
 		position:relative;
 		overflow:hidden;
 		text-align:center;
-		background:#292929 url(../assets/sj2.jpg) 0% -150px repeat fixed;
+		background:#292929 url(../assets/sj2.jpg) -100px -100px no-repeat fixed;
+		background-size:180% auto;
 		// -webkit-background-size:cover;
 		// -moz-background-size:cover;
 		// -o-background-size:cover;
@@ -138,7 +139,7 @@
 		
 	}
 	.guestbook-name{
-		font-family: 'Ek Mukta', sans-serif; font-size: 1em;
+		font-family: 'Great Vibes', sans-serif; font-size: 1.6em;
 		font-weight: 900;
 	}
 	.guestbook-msg{

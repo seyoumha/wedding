@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150327204221) do
+ActiveRecord::Schema.define(version: 20150409155754) do
 
   create_table "guestbooks", force: true do |t|
     t.text     "name"
     t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "approved_at"
   end
 
 end
