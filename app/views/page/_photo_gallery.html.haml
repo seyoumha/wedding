@@ -1,0 +1,17 @@
+.container
+  #slideshow
+    %div= image_tag 'sj1.jpg', {u: 'image'}
+    %div= image_tag 'sj2.jpg', {u: 'image'}
+    %div= image_tag 'sj3.jpg', {u: 'image'}
+
+
+:javascript
+
+  $(function(){
+    $('#slideshow').slick({
+      // autoplay: true,
+      dots: true,
+      arrows: true
+    })
+  })
+

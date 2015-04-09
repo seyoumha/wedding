@@ -1,0 +1,19 @@
+.content
+  .guestbook
+    .page.index
+      .row
+        .col-md-5.col-md-offset-1
+          %h2.text-right Guest books  
+          - if @guestbooks.present?
+            - @guestbooks.each do |g|
+              .well.text-container
+                .row
+                  .guestbook-name
+                    = g.name.titleize 
+                .row
+                  .guestbook-msg 
+                    = g.message
+                .clearfix    
+
+
+              

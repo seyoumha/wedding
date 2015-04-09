@@ -1,0 +1,23 @@
+.content
+  .guestbook.page
+    .new
+      .row
+        .col-lg-5.col-lg-offset-1
+          %h2 Please Leave a note for the newlyweds !
+          .well
+            = form_for @guestbook, html: {multipart: true}  do |f|
+              .form-group
+                =f.label :name
+                =f.text_field :name, class: 'form-control'
+              .form-group
+                =f.label :message
+                =f.text_area :message, class: 'form-control', rows: '3'
+              .form-group
+                .col-lg-12
+                  =f.submit "Sign Guestbook", class: 'btn btn-info'
+            .clearfix
+        .col-lg-3.col-lg-offset-2
+          .new
+            .quote
+              %h2 "This day I will marry my best friend, the one I laugh with, live for, dream with, love!  
+              =link_to 'View Guest book', guestbooks_path, class: 'btn btn-info'

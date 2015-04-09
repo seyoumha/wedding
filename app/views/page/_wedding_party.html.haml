@@ -1,0 +1,39 @@
+.wedding-party-container
+  %h2.page-title Wedding Party
+  .row.banner
+    .col-md-3  
+      .wedding-party-image1.a.img-circle
+        =image_tag'bridesmaid1.jpg'
+      .text-container.hide
+        Samra Jawi. 
+        %br/
+        From Atlanta GA
+    .col-md-3
+      .wedding-party-image1.b.img-circle
+        =image_tag'bridesmaid1.jpg'
+    .col-md-3  
+      .wedding-party-image1.c.img-circle
+        =image_tag'bridesmaid1.jpg'
+    .col-md-3
+      .wedding-party-image1.d.img-circle
+        =image_tag'groomsmen1.jpg'
+  .row.banner    
+    .col-md-3
+      .wedding-party-image2.a.img-circle
+        =image_tag'groomsmen1.jpg'
+    .col-md-3
+      .wedding-party-image2.b.img-circle
+        =image_tag'groomsmen1.jpg'
+    .col-md-3
+      .wedding-party-image2.c.img-circle
+        =image_tag'groomsmen1.jpg'  
+    .col-md-3
+      .wedding-party-image2.d.img-circle
+        =image_tag'groomsmen1.jpg'
+:javascript
+  $('.a').hover(function(){
+    $('.text-container').toggleClass('hide')
+  });
+  $(".a, .b, .c, .d").hide().each(function(i) {
+    $(this).delay(i*1000).fadeIn(1000);
+  });

@@ -1,0 +1,148 @@
+// Place all the styles related to the Page controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// font-family: 'Wire One', sans-serif;
+// font-family: 'Ek Mukta', sans-serif;
+// font-family: 'Great Vibes', cursive;
+// font-family: 'Dawning of a New Day', cursive;
+.line1{font-family: 'Great Vibes', sans-serif; font-size: 5em;}
+.line2 { font-family: 'Wire One', cursive; font-size: 4em;}
+.line3{font-family: 'Wire One', cursive; font-size: 4em;}
+#navagation{
+	font-family: 'Wire One', cursive; 
+	font-size: 2em;
+}
+
+.content{
+	.page{
+		padding-top: 50px;
+		font-size: 1.1em;
+		h2{font-family: 'Ek Mukta', sans-serif;}
+		h3{font-family: 'Great Vibes', sans-serif;}
+		.page-title{font-family: 'Great Vibes', sans-serif;}
+	}
+	.text-container{
+		background-color: rgba(255,255,255,0.5);
+	}
+	.home{
+		width: 100%;
+		height: 1000px;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		background: #292929 url(../assets/sj1.jpg) 50% -150px repeat fixed;
+		padding-top: 120px
+
+		}
+	.our-story{
+		background-color: #A77EF4;
+		height: 500px;
+		width: 100%;
+
+		
+
+	}
+	.proposal{
+		width:100%;
+		height:900px;
+		position:relative;
+		overflow:hidden;
+		text-align:center;
+		background:#292929 url(../assets/sj2.jpg) 0% -150px repeat fixed;
+		// -webkit-background-size:cover;
+		// -moz-background-size:cover;
+		// -o-background-size:cover;
+		// background-size:cover
+	}
+	.wedding-party{
+		width: 100%;
+		height: 700px;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		background-color: #C4A7C7;
+		color: #fff;
+		padding: 30px
+
+	}
+	
+	.wedding-party-image1{
+		height: 200px;
+		width: 200px;
+		position: relative;
+		overflow: hidden;
+
+	}
+	.wedding-party-image2{
+		height: 200px;
+		width: 200px;
+		position: relative;
+		overflow: hidden;
+		margin-top: 50px
+
+	}
+	.wedding-party-container{
+		padding-left: 5px;
+		padding-right: 5px;
+		.banner{
+			width: 100%;
+			height:100px;
+			background-color: #A161F4;
+		}
+	}
+	.photo-gallery{
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		background: #212426 url(../assets/dark_embroidery.png) 0 0 repeat fixed;
+		background-color: #212426;
+	}
+	.venue{
+		h1, h2, h3, h4 { color: #fff}
+		color: #000;
+		width: 100%;
+		height: 800px;
+		position: relative;
+		overflow: hidden;
+		background: #212426 url(../assets/bgmap2.jpg) 0 80px no-repeat fixed;
+		.text-content{
+			background-color: #fff;
+			height: 400px;
+			width: 1200px;
+			padding: 20px;
+			text-align: center;
+		}
+	}
+	
+	.guestbook{
+		width: 100%;
+		position: relative;
+		background: #292929 url(../assets/sj_guestbook.jpg) 50% -150px no-repeat fixed;
+		color: gray;
+		h2{
+			font-family: 'Great Vibes', sans-serif; font-size: 5em;
+		}
+		.new{
+			h2{font-family: 'Great Vibes', sans-serif; font-size: 2.1em}
+			height: 900px;
+			padding-top: 20px;
+			.quote{
+				text-align: center;
+			}
+		}
+		.index{
+			padding-top: 80px
+		}
+		
+		
+	}
+	.guestbook-name{
+		font-family: 'Ek Mukta', sans-serif; font-size: 1em;
+		font-weight: 900;
+	}
+	.guestbook-msg{
+		font-family: 'Ek Mukta', sans-serif; font-size: 1em;
+	}
+	
+}

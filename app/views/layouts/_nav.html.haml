@@ -1,0 +1,20 @@
+/Navagagtion
+#navagation
+  .navbar.navbar-default.navbar-fixed-top
+    .container
+      .navbar-collapse.collapse
+        %ul.nav.navbar-nav
+          %li
+            =link_to 'Home', "#{root_url}#home"
+          %li 
+            =link_to 'Our Story', "#{root_url}#our-story"
+          %li 
+            =link_to 'The Proposal', "#{root_url}#the-proposal"
+          %li 
+            =link_to 'Wedding Party', "#{root_url}#wedding-party"
+          %li 
+            =link_to 'Photo Gallery', "#{root_url}#photo-gallery"
+          %li 
+            =link_to 'Guestbook', new_guestbook_path
+          %li 
+            =link_to 'Venue Info', "#{root_url}#venue"
