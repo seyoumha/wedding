@@ -1,39 +1,108 @@
-.wedding-party-container
-  %h2.page-title Wedding Party
-  .row.banner
-    .col-md-3  
-      .wedding-party-image1.a.img-circle
-        =image_tag'bridesmaid1.jpg'
-      .text-container.hide
-        Samra Jawi. 
-        %br/
-        From Atlanta GA
-    .col-md-3
-      .wedding-party-image1.b.img-circle
-        =image_tag'bridesmaid1.jpg'
-    .col-md-3  
-      .wedding-party-image1.c.img-circle
-        =image_tag'bridesmaid1.jpg'
-    .col-md-3
-      .wedding-party-image1.d.img-circle
-        =image_tag'groomsmen1.jpg'
-  .row.banner    
-    .col-md-3
-      .wedding-party-image2.a.img-circle
-        =image_tag'groomsmen1.jpg'
-    .col-md-3
-      .wedding-party-image2.b.img-circle
-        =image_tag'groomsmen1.jpg'
-    .col-md-3
-      .wedding-party-image2.c.img-circle
-        =image_tag'groomsmen1.jpg'  
-    .col-md-3
-      .wedding-party-image2.d.img-circle
-        =image_tag'groomsmen1.jpg'
-:javascript
-  $('.a').hover(function(){
-    $('.text-container').toggleClass('hide')
-  });
-  $(".a, .b, .c, .d").hide().each(function(i) {
-    $(this).delay(i*1000).fadeIn(1000);
-  });
+.wedding-party
+  %h1.page-title.text-center The Wedding Party
+  .row
+    .col-sm-8.col-sm-offset-1
+      #wedding-party
+        %ul
+          %li
+            .row
+              .col-sm-4
+                =image_tag'groomsmen1.jpg', class: 'img-circle'
+              .com-sm-8
+                %span
+                  %i John Adams  |  Groomsmen
+                  %p John and I were the unlikliest of friends, until we both discovered each other's love for karaoke. We met in 2005 and over the years, she has become one of my very best friends. She is particularly excited for the wedding, as her support for straight marriage has been unwavering. Even though she's busy traveling the world, she still makes a point to be there for me.
+          %li
+            .row
+              .col-sm-4
+                =image_tag'groomsmen1.jpg', class: 'img-circle'
+              .com-sm-8 
+                %span
+                  %i Abebe Bekela  |  Groomsmen
+                  %p John and I were the unlikliest of friends, until we both discovered each other's love for karaoke. We met in 2005 and over the years, she has become one of my very best friends. She is particularly excited for the wedding, as her support for straight marriage has been unwavering. Even though she's busy traveling the world, she still makes a point to be there for me.
+          %li
+            .row
+              .col-sm-4
+                =image_tag'groomsmen1.jpg', class: 'img-circle'
+              .com-sm-8 
+                %span
+                  %i Barnes Noble  |  Groomsmen
+                  %p John and I were the unlikliest of friends, until we both discovered each other's love for karaoke. We met in 2005 and over the years, she has become one of my very best friends. She is particularly excited for the wedding, as her support for straight marriage has been unwavering. Even though she's busy traveling the world, she still makes a point to be there for me.
+          %li
+            .row
+              .col-sm-4
+                =image_tag'groomsmen1.jpg', class: 'img-circle'
+              .com-sm-8 
+                %span
+                  %i John Johnson  |  Groomsmen
+                  %p John and I were the unlikliest of friends, until we both discovered each other's love for karaoke. We met in 2005 and over the years, she has become one of my very best friends. She is particularly excited for the wedding, as her support for straight marriage has been unwavering. Even though she's busy traveling the world, she still makes a point to be there for me.
+
+
+/   .row
+/     .col-sm-3  
+/       .wedding-party-image.a.img-circle.faded
+/         =image_tag'groomsmen1.jpg'
+/     .col-sm-3
+/       .wedding-party-image.b.img-circle.faded
+/         =image_tag'groomsmen1.jpg'
+/     .col-sm-3 
+/       .wedding-party-image.c.img-circle.faded
+/         =image_tag'groomsmen1.jpg'
+/     .col-sm-3
+/       .wedding-party-image.d.img-circle.faded
+/         =image_tag'groomsmen1.jpg'
+/   .row
+/     .col.md-12.col-md-offset-1.col-sm-1.col-xs-1
+/       .wedding-party-text.a.hide
+/         %h3 Abebe Bekela
+/         %h2 Maid of honor
+/         %p Alina and I were the unlikliest of friends, until we both discovered each other's love for karaoke. We met in 2005 and over the years, she has become one of my very best friends. She is particularly excited for the wedding, as her support for straight marriage has been unwavering. Even though she's busy traveling the world, she still makes a point to be there for me.
+/       .wedding-party-text.b.hide
+/         %h3 John Adams
+/         %h2 Maid of honor
+/         %p Alina and I were the unlikliest of friends, until we both discovered each other's love for karaoke. We met in 2005 and over the years, she has become one of my very best friends. She is particularly excited for the wedding, as her support for straight marriage has been unwavering. Even though she's busy traveling the world, she still makes a point to be there for me.
+/       .wedding-party-text.c.hide
+/         %h3 Selomon Bekele
+/         %h2 Maid of honor
+/         %p Alina and I were the unlikliest of friends, until we both discovered each other's love for karaoke. We met in 2005 and over the years, she has become one of my very best friends. She is particularly excited for the wedding, as her support for straight marriage has been unwavering. Even though she's busy traveling the world, she still makes a point to be there for me.
+/       .wedding-party-text.d.hide
+/         %h3 Addisu Addis
+/         %h2 Maid of honor
+/         %p Alina and I were the unlikliest of friends, until we both discovered each other's love for karaoke. We met in 2005 and over the years, she has become one of my very best friends. She is particularly excited for the wedding, as her support for straight marriage has been unwavering. Even though she's busy traveling the world, she still makes a point to be there for me.  
+
+      
+
+
+/ :javascript
+  
+/   $('.img-circle').hover(function(){
+/     $(this).toggleClass('solid');
+
+/   });
+
+/   $('.wedding-party-image').hover(function(){
+/     $('.wedding-party-text').toggleClass('hide');
+    
+/     if($(this).hasClass('a')){
+/       $('.wedding-party-text.a').toggleClass('hide')
+/     }
+/     if($(this).hasClass('b')){
+/       $('.wedding-party-text.b').toggleClass('hide')
+/     }
+/     if($(this).hasClass('c')){
+/       $('.wedding-party-text.c').toggleClass('hide')
+/     }
+/     if($(this).hasClass('d')){
+/       $('.wedding-party-text.d').toggleClass('hide')
+/     }
+
+
+/   });
+/ :javascript
+/   $('.img-cir').mouseover(function(){
+/      $(this).addClass('solid');
+/    });
+/   $('.img-circle').mouseout(function(){
+/      $(this).addClass('faded');
+
+/    });

@@ -1,8 +1,8 @@
 .container
   #slideshow
-    %div= image_tag 'sj1.jpg', {u: 'image'}
-    %div= image_tag 'sj2.jpg', {u: 'image'}
-    %div= image_tag 'sj3.jpg', {u: 'image'}
+    %div= image_tag 'sj1 copy.jpg', {u: 'image'}
+    %div= image_tag 'sj2 copy.jpg', {u: 'image'}
+    %div= image_tag 'sj3 copy.jpg', {u: 'image'}
 
 
 :javascript
@@ -11,7 +11,9 @@
     $('#slideshow').slick({
       // autoplay: true,
       dots: true,
-      arrows: true
+      adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
     })
   })
 

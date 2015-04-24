@@ -8,10 +8,11 @@
 .line1{font-family: 'Great Vibes', sans-serif; font-size: 5em;}
 .line2 { font-family: 'Wire One', cursive; font-size: 4em;}
 .line3{font-family: 'Wire One', cursive; font-size: 4em;}
-#navagation{
+#navbar{
 	font-family: 'Wire One', cursive; 
 	font-size: 2em;
 }
+
 
 .content{
 	.page{
@@ -19,25 +20,57 @@
 		font-size: 1.1em;
 		h2{font-family: 'Ek Mukta', sans-serif;}
 		h3{font-family: 'Great Vibes', sans-serif;}
-		.page-title{font-family: 'Great Vibes', sans-serif;}
+		.page-title{font-family: 'Great Vibes', sans-serif; font-size: 3em;}
 	}
 	.text-container{
 		background-color: rgba(255,255,255,0.5);
 	}
+	.glyphicon-menu-down{
+		font-size: 5em;
+		padding-top: 30px;
+		color: gray;
+		text-decoration: none;
+	}
+	.glyphicon-option-horizontal{
+		font-size: 2.5em;
+		padding: none;
+	}
+	.glyphicon-menu-left{
+		font-size: 2.5em;
+	}
+	.glyphicon-heart{
+		font-size: 2.5em;
+		color: white;
+		&:hover{
+			color: red;
+		}
+	}
+	.glyphicon-menu-right{
+		padding-top: 80px;
+		font-size: 2.5em;
+	}
+	
+
 	.home{
 		width: 100%;
 		height: 1000px;
 		position: relative;
 		overflow: hidden;
 		text-align: center;
-		background: #292929 url(../assets/sj1.jpg) 50% -150px repeat fixed;
-		padding-top: 120px
-
-		}
+		background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat fixed;
+		background-size: cover;
+		padding-top: 120px;
+		
+	}
 	.our-story{
-		background-color: #A77EF4;
-		height: 500px;
+		background-color: #4AD9DB;
+		height: 550px;
 		width: 100%;
+		h2{font-family: 'Great Vibes', sans-serif; font-size: 4em;}
+		h3{font-family: 'Great Vibes', sans-serif; font-size: 2em;}
+		.text{
+			display: none;
+		}
 
 		
 
@@ -48,51 +81,79 @@
 		position:relative;
 		overflow:hidden;
 		text-align:center;
-		background:#292929 url(../assets/sj2.jpg) -100px -100px no-repeat fixed;
-		background-size:180% auto;
-		// -webkit-background-size:cover;
-		// -moz-background-size:cover;
-		// -o-background-size:cover;
-		// background-size:cover
+		background:#292929 url(../assets/sj2.jpg) 0% 0% repeat fixed;
+		background-size: cover;
 	}
 	.wedding-party{
 		width: 100%;
-		height: 700px;
+		height: 100%;
 		position: relative;
 		overflow: hidden;
 		text-align: center;
-		background-color: #C4A7C7;
+		background-color: #4AD9DB;
 		color: #fff;
-		padding: 30px
-
-	}
-	
-	.wedding-party-image1{
-		height: 200px;
-		width: 200px;
-		position: relative;
-		overflow: hidden;
-
-	}
-	.wedding-party-image2{
-		height: 200px;
-		width: 200px;
-		position: relative;
-		overflow: hidden;
-		margin-top: 50px
-
-	}
-	.wedding-party-container{
-		padding-left: 5px;
-		padding-right: 5px;
-		.banner{
-			width: 100%;
-			height:100px;
-			background-color: #A161F4;
+		.wedding-party-text{
+			h3{font-family: 'Wire One', sans-serif; font-size: 2em;}
+			h2{font-family: 'Great Vibes', sans-serif; font-size: 1.5em;}
+			font-family: 'Dawning of a New Day', cursive; font-size: 1.5em;
+			
 		}
 	}
+	#wedding-party{
+		h1{font-family: 'Great Vibes', sans-serif; font-size: 4.5em; color:black;letter-spacing: 4px;}
+		color: black;
+		i{
+			font-family: 'Wire One', sans-serif; 
+			font-size: 2.5em;
+			padding: none;
+			margin: none;
+			letter-spacing: 2px;
+		}
+		
+		ul{
+  			list-style: none;
+  			position: relative;
+  			overflow: hidden;
+  			padding: none;
+  			margin: none;
+  			display: inline;
+		}
+		span{
+			width: 150px;
+			height: 300px;
+			text-align: center;
+			display: none;
+			position: relative;	
+		}
+		img{
+			opacity: .4;
+		}
+		li{
+			padding-bottom: 15px;
+		}
+
+		li:hover span {
+  			display: inline;
+		}
+		li:hover img{
+			opacity: 1;
+		}
+	}
+	
+	.wedding-party-image {
+		height: 150px;
+		width: 150px;
+		position: relative;
+		overflow: hidden;
+		
+	}
+	
+	.faded{opacity: 0.3}
+	.solid{opacity: 1}
+	
 	.photo-gallery{
 		width: 100%;
+		height: 1000px;
 		position: relative;
 		overflow: hidden;
 		text-align: center;
@@ -110,16 +171,35 @@
 		.text-content{
 			background-color: #fff;
 			height: 400px;
-			width: 1200px;
+			width: 600px;
 			padding: 20px;
 			text-align: center;
+			font-family: 'Great Vibes', sans-serif;
+
+			h3{ 
+				color: black;
+				font-size: 3em;
+			}
+			span{
+				font-size: 1.5em;
+				font-weight: lighter;
+
+			}
+			.date{
+				font-size: 2.5em;
+			}
+			p{
+				font-size: 1.5em;
+			}
 		}
 	}
 	
 	.guestbook{
 		width: 100%;
 		position: relative;
-		background: #292929 url(../assets/sj_guestbook.jpg) 50% -150px no-repeat fixed;
+		background: #292929 url(../assets/sj_guestbook.jpg) 52% -150px no-repeat fixed;
+		background-size:180% auto;
+
 		color: gray;
 		h2{
 			font-family: 'Great Vibes', sans-serif; font-size: 5em;
