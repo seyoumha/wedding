@@ -1,9 +1,41 @@
 .container
+  .row.hidden-sm.hidden-xs
+    %h1.page-title The Proposal
+  .row.hidden-md.hidden-lg
+    .page-title
+      .mobile The Proposal
+  .row  
+    .col-sm-4
+      =link_to "Click for Jawi's Version",'#', class: 'jawi'
+    .col-sm-4.col-sm-offset-4  
+      =link_to "Click for Samra's Version","#", class: "samra" 
   .row
-    .col-lg-5.col-md-6.col-sm-8
+    .col-sm-10    
+      .story-groom.hidden
+        .well.text-container
+          %i Jawi's Story
+          %p.text-left  It happened three days prior to our departure to Atlanta, to meet Samra’s family and friends.  It was a beautiful Friday night on November 21st at Kuriftu Resort & Spa in Debre Zeit which is 47km outside of Addis Ababa. We arrived at our destination around 3pm. I had told Samra that this trip was part of her birthday gift. Once we reached our destination we unpacked our stuff and headed towards the water just to relax and later on enjoyed the sauna and steam.  After a few hours we got back to our room to get ready for dinner.  As Samra was preparing I sneaked out to speak with the restaurant manager in order for them to arrange on how I will propose, handed the engagement ring to him, and reserved a table by the water next to a fire place looking up to the moon and the stars.  As the hour hit 8pm, we made our way to the restaurant as we both were hungry.  We took our designated spots at the restaurant and the waiter came to take our orders. I ordered the Ethiopian Agelgil (Ethiopian food inside a basket) and Samra ordered the grilled fish.  We started to reminisce about the beautiful time we spent together since we met each other as Samra was sipping on her wine and I was drinking beer.  Once the dinner arrived on the table, I started to tell Samra how I loved her and wanted to grow old with her.  I can tell from her face that she was confused by my long emotional speech.  When I was done I asked Samra to open the Agelgil as an honor to taste the food since it’s her birthday week. Once she opened it I took the ring out and was down on my knees and asked Samra “Will you marry me?” at first she was quiet and overwhelmed by the question so I asked her again and the second time and she said Yes!!!!!!!!!!!!! 
+  .row
+    .col-sm-12    
+      .story-bride.hidden    
+        .well.text-container
+          %i Samra's Story
+          %p.text-left.story-bride I knew Jawi was the one for me since I met him. We clicked and had this amazing chemistry from day one. So I was ready for him to propose when I came to surprise him in December 2014 (5 months after meeting him). So my friends and I have been wondering what is taking him so long!?! I mean everyone knew this was it so it was a matter of time. So by November almost a year later when he asked me to go for a vacation right before we left for the US proposal was the last thing on my mind.  I was just thinking how we could go for a vacation right before our month long get away to the US? What do I say to my boss? It was sudden, but I didn’t think much of it since he had promised we would get away as my birthday gift. So we drove to Kuriftu resort and checked- in. Once we dropped our stuff he asked me to go for a walk and he is closely examining the grounds and I am thinking what’s going on with this guy? Little did I know he was trying to find the perfect spot to pop the question! We returned to our room changed and went for a swim/steam/sauna. We returned to the room and got ready for dinner. We sat by the fireside right by the water and it was a beautiful night! We ordered and Jawi went to the bathroom to “wash his hand”, but it really was to hand the ring to the waiter so he can bring it in the Agelgil. Right before we ate Jawi gave a speech about how we met and how happy he has been to have me in his life. When he said he wanted to grow old with me he got very emotional and said well the birthday girl should do the honors and open the Agelgil. I did! I was expecting to taste delicious Ethiopian food like beg wet or doro wet, but instead I saw a jewelery box sitting on flower petals!! I was in shock and before I knew it he picked up the box and was down on his knees asking me to marry him!! I swear I froze! He cleared his throat like as if to say “hello! I am down here on my knees”. He repeated “Samra Ashenafi will you marry me?” the second time and a light went off in my head and I said YES!!! The staff and everyone came out clapping to congratulate us. I couldn’t eat or sleep. I was looking for a wifi so I could share the biggest news of my life with my family and friends. I talked, emailed and texted until midnight at the reception. Meantime Jawi went back to the room around 11 PM and slept like a baby. I guess his job was done!   
 
-      .well.text-container
-        %h1.page-title The Proposal
-        %p
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+:javascript
+  $('.jawi').click(function(e){
+    e.preventDefault();
+    $(this).hide();
+    $('.samra').show();
+    $('.story-groom, .story-bride').addClass('hidden');
+    $('.story-groom').removeClass('hidden');
+  });
+
+  $('.samra').click(function(e){
+    e.preventDefault();
+    $(this).hide();
+    $('.jawi').show();
+    $('.story-groom, .story-bride').addClass('hidden');
+    $('.story-bride').removeClass('hidden');
+  });
 

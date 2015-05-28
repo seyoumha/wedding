@@ -1,19 +1,16 @@
 .container
   #slideshow
-    %div= image_tag 'sj1 copy.jpg', {u: 'image'}
-    %div= image_tag 'sj2 copy.jpg', {u: 'image'}
-    %div= image_tag 'sj3 copy.jpg', {u: 'image'}
+    %div= image_tag 'gallery-1.jpg', {u: 'image'}
+    %div= image_tag 'gallery-2.jpg', {u: 'image'}
+    %div= image_tag 'IMG_0362.JPG', {u: 'image'}
 
 
 :javascript
 
-  $(function(){
     $('#slideshow').slick({
-      // autoplay: true,
       dots: true,
-      adaptiveHeight: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-    })
-  })
-
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true
+    });
