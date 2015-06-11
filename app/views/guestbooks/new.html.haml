@@ -1,8 +1,8 @@
 .content
   .guestbook.page
-    .new
+    .new.container
       .row
-        .col-md-6.col-xs-10.col-xs-offset-1
+        .col-md-6
           %h2 Please Leave a note for the newlyweds!
           .well
             = form_for @guestbook, html: {multipart: true}  do |f|
@@ -15,8 +15,11 @@
               .form-group
                 .col-md-12
                   =f.submit "Sign Guestbook", class: 'btn btn-info'
-        .col-md-6.col-xs-10.col-xs-offset-1
+              .clearfix
+        .col-md-6
           .new
             .quote
-              %h2 "This day I will marry my best friend, the one I laugh with, live for, dream with, love!  
+              %h2 "This day I will marry my best friend,
+              %h2 the one I laugh with, 
+              %h2 live for, dream with, and love!  
               =link_to 'View Guest book', guestbooks_path, class: 'btn btn-info'

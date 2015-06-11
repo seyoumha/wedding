@@ -1,380 +1,726 @@
 // Place all the styles related to the Page controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-// font-family: 'Wire One', sans-serif;
+
+// nav, h3, font-family: 'Wire One', sans-serif;
 // font-family: 'Ek Mukta', sans-serif;
 // font-family: 'Great Vibes', cursive;
 // font-family: 'Dawning of a New Day', cursive;
+/*
+font-family: 'Ubuntu Mono', ;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Shadows Into Light Two', cursive;
+font-family: 'Raleway', sans-serif;*/
+
+
+
+
+
+
+
 .line1{font-family: 'Great Vibes', sans-serif; font-size: 5em;}
 .line2 { font-family: 'Wire One', cursive; font-size: 4em;}
 .line3{font-family: 'Wire One', cursive; font-size: 4em;}
 .mobil{
-	.line1{font-family: 'Great Vibes', sans-serif; font-size: 2.5em;}
-	.line2 { font-family: 'Wire One', cursive; font-size: 2em; font-weight: bold;}
-	.line3{font-family: 'Wire One', cursive; font-size: 2em; font-weight: bold;}
+  .line1{font-family: 'Great Vibes', sans-serif; font-size: 2.5em;}
+  .line2 { font-family: 'Wire One', cursive; font-size: 2em; font-weight: bold;}
+  .line3{font-family: 'Wire One', cursive; font-size: 2em; font-weight: bold;}
 }
 #navbar{
-	font-family: 'Wire One', cursive; 
-	font-size: 2em;
+  font-family: 'Wire One', cursive; 
+  font-size: 2em;
 }
 
 
 .content{
-	.page{
-		padding-top: 50px;
-		font-size: 1.1em;
-		h2{font-family: 'Ek Mukta', sans-serif;}
-		h3{font-family: 'Great Vibes', sans-serif;}
-		.page-title{
-			font-family: 'Great Vibes', sans-serif; font-size: 4em;
-			padding-bottom: 50px;
-			.mobile{
-				font-family: 'Great Vibes', sans-serif; font-size: .7em;
-				padding-bottom: 50px; 
-			}
-		}
-	}
-	.text-container{
-		background-color: rgba(255,255,255,0.5);
-	}
-	.glyphicon-menu-down{
-		font-size: 5em;
-		padding-top: 30px;
-		color: gray;
-		text-decoration: none;
-	}
-	.glyphicon-option-horizontal{
-		font-size: 1.5em;
-		padding-bottom: 2px;
-	}
-	.glyphicon-menu-left{
-		font-size: 1.5em;
-	}
-	.glyphicon-heart{
-		font-size: 2em;
-		padding-top: 0px;
-		color: white;
-		&:hover{
-			color: red;
-		}
-	}
-	.glyphicon-menu-right{
-		padding-top: 80px;
-		font-size: 1.5em;
-	}
-	
+  .page{
+    /*padding-top: 50px;*/
+    font-size: 1.1em;
+    h2{font-family: 'Ek Mukta', sans-serif;}
+    h3{font-family: 'Great Vibes', sans-serif;}
+    .page-title{
+      font-family: 'Great Vibes', sans-serif; font-size: 4em;
+      padding-bottom: 50px;
+      .mobile{
+        font-family: 'Great Vibes', sans-serif; font-size: .7em;
+        padding-bottom: 50px; 
+      }
+    }
+  }
+  .text-container{
+    background-color: rgba(255,255,255,0.5);
+  }
+  .glyphicon-menu-down{
+    font-size: 5em;
+    padding-top: 30px;
+    color: gray;
+    text-decoration: none;
+  }
+  .glyphicon-option-horizontal{
+    font-size: 1.5em;
+    padding-bottom: 2px;
+  }
+  .glyphicon-menu-left{
+    font-size: 1.5em;
+  }
+  .glyphicon-heart{
+    font-size: 2em;
+    padding-top: 0px;
+    color: white;
+    &:hover{
+      color: red;
+    }
+  }
+  .glyphicon-menu-right{
+    padding-top: 80px;
+    font-size: 1.5em;
+  }
+  
 
-	.our-story-image{
+  .our-story-image{
+    
+    .glyphicon-option-horizontal{
+      font-size: 1em;
+      padding: none;
+      margin: none;
+    }
+    .glyphicon-menu-left{
+      font-size: 1em;
+      padding: none;
+      margin: none;
+    }
+    .glyphicon-heart{
+      font-size: 2.5em;
+      padding: none;
+      margin: none;
+      color: white;
+      &:hover{
+        color: red;
+      }
+    }
+    .glyphicon-menu-right{
+      font-size: 1em;
+    }
+    h1{font-family: 'Great Vibes', sans-serif; font-size: 2em; padding: none;}
+    p{font-family: 'Wire One', sans-serif; font-size: 1.5em; padding: none;}
+    h3{font-family: 'Great Vibes', sans-serif; font-size: 1em; padding: none;}
+    i{
+      font-family: 'Wire One', sans-serif; 
+      font-size: 1.5em;
+      
+    }
+      
+  }
 
-		.glyphicon-option-horizontal{
-			font-size: 1em;
-			padding: none;
-			margin: none;
-		}
-		.glyphicon-menu-left{
-			font-size: 1em;
-			padding: none;
-			margin: none;
-		}
-		.glyphicon-heart{
-			font-size: 2.5em;
-			padding: none;
-			margin: none;
-			color: white;
-			&:hover{
-				color: red;
-			}
-		}
-		.glyphicon-menu-right{
-			font-size: 1em;
-		}
-		h1{font-family: 'Great Vibes', sans-serif; font-size: 2em; padding: none;}
-		p{font-family: 'Wire One', sans-serif; font-size: 1.5em; padding: none;}
-		h3{font-family: 'Great Vibes', sans-serif; font-size: 1em; padding: none;}
-		i{
-			font-family: 'Wire One', sans-serif; 
-			font-size: 1.5em;
-			
-		}
-			
-	}
+  
 
-	
-
-	.home{
-		width: 100%;
-		height: 600px;
-		position: relative;
-		overflow: hidden;
-		text-align: center;
-		background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat;
-		/*do fixed for regular screen*/
-		-webkit-background-size: cover;
+  .home{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    
+    /*iPhone 5 and 5S*/
+    @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        @media (min-width: 568px) {
-        	background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat fixed;
-        	-webkit-background-size: cover;
-       		-moz-background-size: cover;
-        	-o-background-size: cover;
-        	background-size: cover;
-        }
-	
-
-		padding-top: 120px;
-		
-	}
-	.our-story{
-		background-color: #808080;
-		height: 550px;
-		overflow: scroll;
-		width: 100%;
-		.text{
-			display: none;
-		}
-		h1{
-			font-family: 'Wire One', sans-serif; 
-			font-size: 3em; 
-			padding: none;
-			letter-spacing: 5px;
-		}
-		p{
-			font-family: 'Wire One', sans-serf;
-			font-size: 2em;
-		}
-
-		
-
-	}
-	.proposal{
-		width:100%;
-		height:100%;
-		position:relative;
-		overflow:hidden;
-		text-align: center;
-		background:#292929 url(../assets/sj2.jpg) 0% 30px no-repeat;
-		-webkit-background-size: cover;
+        background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat;
+    }
+    /*iPhone 6*/
+    @media only screen 
+      and (min-device-width: 375px) 
+      and (max-device-width: 667px) 
+      and (-webkit-min-device-pixel-ratio: 2) { 
+        -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        @media (min-width: 568px) {
-        	height: 750px;
-        	background: #292929 url(../assets/sj2.jpg) 0% 0% no-repeat fixed;
-        	-webkit-background-size: cover;
-       		-moz-background-size: cover;
-        	-o-background-size: cover;
-        	background-size: cover;
+        background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat;
+    }
+    /*iPhone 6+ */
+    @media only screen 
+      and (min-device-width: 414px) 
+      and (max-device-width: 736px) 
+      and (-webkit-min-device-pixel-ratio: 3) { 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat;
+
+      }
+      /*Galaxy S4*/  
+    @media screen 
+      and (device-width: 320px) 
+      and (device-height: 640px) 
+      and (-webkit-device-pixel-ratio: 3) {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat;
+      }
+       /*Galaxy S5*/  
+    @media screen 
+      and (device-width: 360px) 
+      and (device-height: 640px) 
+      and (-webkit-device-pixel-ratio: 3) {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat
+      }
+      /*ipad mini*/
+    /*@media only screen 
+      and (min-device-width: 768px) 
+      and (max-device-width: 1024px) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat
+
+}*/
+  /*ipad 3+4*/
+/*@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat
+
+}*/
+/*galaxy tab*/
+/*@media 
+  (min-device-width: 800px) 
+  and (max-device-width: 1280px) {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat
+
+}  */  
+
+  
+
+    padding-top: 120px;
+    
+  }
+  .our-story{
+    padding-top: 50px;
+    background-color: #808080;
+    overflow: scroll;
+    width: 100%;
+    .text{
+      display: none;
+    }
+    .mobile{
+      height: 100%;
+    }
+    .none-mobile{
+      height: 400px;
+    }
+    h1{
+      font-family: 'Wire One', sans-serif; 
+      font-size: 3em; 
+      padding: none;
+      letter-spacing: 5px;
+    }
+    p{
+      font-family: 'Indie Flower', cursive;
+      font-size: 2em;
+    }
+    i{
+      color: #ffffff;
+      font-weight: bold;
+      font-family: 'Indie Flower', cursive;
+    }
+    h3{
+      color: #ffffff;
+      font-size: 2em;
+      font-family: 'Indie Flower', cursive;
+    }
+
+    
+
+  }
+  .proposal{
+    min-height: 450px;
+    .mobile{
+      font-size: .7em;
+      font-family: 'Great Vibes', sans-serif;
+    }
+    padding-top: 50px;
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    text-align: center;
+    background:#292929 url(../assets/sj2.jpg) 0% 0% no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+        /*iPhone 5 and 5S*/
+    @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat;
+    }
+    /*iPhone 6*/
+        @media only screen 
+          and (min-device-width: 375px) 
+          and (max-device-width: 667px) 
+          and (-webkit-min-device-pixel-ratio: 2) { 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background: #292929 url(../assets/sj2.jpg) -150px 0% no-repeat;
         }
-        h1{font-family: 'Great Vibes', sans-serif; font-size: 2.5em; padding-bottom: 20px; }
-		h3{font-family: 'Wire One', sans-serif; font-size: 2em;}
-		h2{font-family: 'Great Vibes', sans-serif; font-size: 1em;}
-		p{
-			font-family: 'Ek Mukta', sans-serif; font-size: 1em;
-		}
-		i{
-			font-family: 'Wire One', sans-serif; font-size: 2em;
-			font-weight: bold;
-		}
-		.jawi, .samra{
-			font-family: 'Great Vibes', sans-serif; font-size: 2.5em;
-			text-decoration: none;
-			color: #535353;
-		}
-	}
-	.wedding-party{
-		width: 100%;
-		position: relative;
-		overflow: hidden;
-		text-align: center;
-		/*background-color: #AB0058;*/
+        /*iPhone 6+ */
+        @media only screen 
+          and (min-device-width: 414px) 
+          and (max-device-width: 736px) 
+          and (-webkit-min-device-pixel-ratio: 3) { 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background: #292929 url(../assets/sj2.jpg) 0% 0% no-repeat;
 
-		background: -webkit-linear-gradient(#F51495, #97388E); /* For Safari 5.1 to 6.0 */
-		background: -o-linear-gradient(#F51495, #97388E); /* For Opera 11.1 to 12.0 */
-		background: -moz-linear-gradient(#F51495, #97388E); /* For Firefox 3.6 to 15 */
-		/*background: linear-gradient(#97388E, #F51495);*/
-		background: linear-gradient(#FF530D,#E82C0C);
-		color: #fff;
-		
-		.wedding-party-text{
-			h1{font-family: 'Dawning of a New Day', sans-serif; font-size: 4em;}
-			h3{font-family: 'Wire One', sans-serif; font-size: 2em;}
-			h2{font-family: 'Great Vibes', sans-serif; font-size: 1em;}
-			
-			
-		}
-		.wedding-party-links{padding-top: 30px;}
-		.groomsmen, .bridesmaid{
-		display: none;
-	}
-	.wedding-party{
-		.wedding-party-image {
-			height: 150px;
-			width: 150px;
-			position: relative;
-			
-		}
-		.wedding-party-link{
-			text-decoration: none;
-		}
-	}
-	.glyphicon.glyphicon-resize-horizontal{
-		font-size: 2em;
-	}
-		
-	.faded{opacity: 0.3}
-	.solid{opacity: 1}
+          }
+          /*Galaxy S4*/  
+        @media screen 
+          and (device-width: 320px) 
+          and (device-height: 640px) 
+          and (-webkit-device-pixel-ratio: 3) {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background: #292929 url(../assets/sj2.jpg) 0% 0% no-repeat;
+          }
+           /*Galaxy 5*/  
+        @media screen 
+          and (device-width: 360px) 
+          and (device-height: 640px) 
+          and (-webkit-device-pixel-ratio: 3) {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background: #292929 url(../assets/sj2.jpg) 0% 0% no-repeat;
+          }
+          /*ipad mini*/
+        /*@media only screen 
+          and (min-device-width: 768px) 
+          and (max-device-width: 1024px) 
+          and (-webkit-min-device-pixel-ratio: 1) {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background: #292929 url(../assets/sj2.jpg) 0% 0% no-repeat
 
-	}
-	#wedding-party{
-		/*h1{font-family: 'Great Vibes', sans-serif; font-size: 4.5em; color:#fff;letter-spacing: 4px;}
-		color: black;*/
-		i{
-			font-family: 'Wire One', sans-serif; 
-			font-size: 2em;
-			padding: none;
-			margin: none;
-			letter-spacing: 2px;
-			width: 100%;
-			height: 100%;
-		}
-		
-		span{
-			width: 50px;
-			height: 100px;
-			position: relative;	
-		}
-		
-		img{
-			opacity: .8;
-		}
+        }*/
+      /*ipad 3+4*/
+    /*@media only screen 
+      and (min-device-width: 768px) 
+      and (max-device-width: 1024px) 
+      and (-webkit-min-device-pixel-ratio: 2) {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background: #292929 url(../assets/sj2.jpg) 0% 0% no-repeat
 
-		img:hover{
-			opacity: 1;
-		}
-		.groomsmen-link, .bridesmaid-link{font-family: 'Great Vibes', sans-serif; 
-		font-size: 3em; 
-		color:#fff;
-		letter-spacing: 4px; 
-		text-decoration: none;
-		}
-		.side-link{
-			font-family: 'Wire One', sans-serif; 
-			font-size: 2.5em;
-			text-decoration: none;
-		}
+    }*/
+    /*galaxy tab*/
+    /*@media 
+      (min-device-width: 800px) 
+       and (max-device-width: 1280px) {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background: #292929 url(../assets/sj2.jpg) 0% 0% no-repeat
 
-		
-		
-	}
-	
-	
-	.photo-gallery{
-		width: 100%;
-		height: 500px;
-		position: relative;
-		overflow: hidden;
-		text-align: center;
-		background: #212426 url(../assets/dark_embroidery.png) 0 0 repeat fixed;
-		background-color: #212426;
-	}
-	.venue{
-		h1, h2, h3, h4 { color: #fff}
-		color: #000;
-		width: 100%;
-		height: 800px;
-		position: relative;
-		overflow: hidden;
-		background: #212426 url(../assets/bgmap2.jpg) 0 80px no-repeat fixed;
-		.text-content{
-			background-color: #B3B3B3;
-			height: 400px;
-			width: 600px;
-			padding: 20px;
-			text-align: center;
-			font-family: 'Great Vibes', sans-serif;
-
-			h3{ 
-				color: black;
-				font-size: 3em;
-			}
-			span{
-				font-size: 1.5em;
-				font-weight: lighter;
-
-			}
-			.date{
-				font-size: 2.5em;
-			}
-			p{
-				font-size: 1.5em;
-			}
-		}
-		.text-content-mobile{
-			background-color: #B3B3B3;
-			height: 400px;
-			width: 100%;
-			padding: 20px;
-			text-align: center;
-			font-family: 'Great Vibes', sans-serif;
-			h3{ 
-				color: black;
-				font-size: 2em;
-			}
-			span{
-				font-size: 1em;
-				font-weight: lighter;
-
-			}
-			.date{
-				font-size: 2em;
-			}
-			p{
-				font-size: 1em;
-			}
-		}
-	}
-	
-	.guestbook{
-		width: 100%;
-		position: relative;
-		background: #292929 url(../assets/sj_guestbook.jpg) 52% -150px no-repeat;
-		background-size:180% auto;
-		
+    }    */
 
 
-		color: gray;
-		h2{
-			font-family: 'Great Vibes', sans-serif; font-size: 5em;
-		}
-		.new{
-			h2{font-family: 'Great Vibes', sans-serif; font-size: 2.1em}
-			height: 900px;
-			padding-top: 20px;
-			.quote{
-				text-align: center;
-			}
-			@media (max-width: 560px) {
-        	background: #292929 url(../assets/sj_guestbook.jpg) 0% 0% no-repeat fixed;
-        	height: 100%;
-        	-webkit-background-size: cover;
-       		-moz-background-size: cover;
-        	-o-background-size: cover;
-        	background-size: cover;
+    h1{font-family: 'Great Vibes', sans-serif; font-size: 3.5em; padding-bottom: 20px; }
+    h3{font-family: 'Wire One', sans-serif; font-size: 2em;}
+    h2{font-family: 'Great Vibes', sans-serif; font-size: 1em;}
+    p{font-family: 'Indie Flower', cursive; font-size: 1.5em;
+
+    }
+    i{
+      font-family: 'Indie Flower', cursive; font-size: 2em;
+      font-weight: bold;
+    }
+    .jawi, .samra, .jawi1, .samra1{
+      /*font-family: 'Great Vibes', sans-serif;*/
+      /*font-family: 'Ek Mukta', sans-serif; font-size: 1em;
+      font-family: 'Raleway', sans-serif;*/
+      font-family: 'Shadows Into Light Two', cursive;
+      font-size: 1.3em;
+      text-decoration: none;
+      color: #535353;
+    }
+  }
+  .wedding-party{
+    width: 100%;
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    /*background-color: #AB0058;*/
+
+    background: -webkit-linear-gradient(#FF530D, #E82C0C); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FF530D, #E82C0C); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FF530D, #E82C0C); /* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(#97388E, #F51495);*/
+    background: linear-gradient(#FF530D, #E82C0C, #C1250A, #E8045C, #D50356);
+    color: #fff;
+    
+    .wedding-party-text{
+      /*h1{font-family: 'Dawning of a New Day', sans-serif; font-size: 4em;}*/
+      h3{font-family: 'Wire One', sans-serif; font-size: 2em;}
+      h2{font-family: 'Great Vibes', sans-serif; font-size: 1em;}
+      
+      
+    }
+    .wedding-party-links{padding-top: 30px;}
+    .groomsmen, .bridesmaid{
+    display: none;
+  }
+  .wedding-party{
+    .wedding-party-image {
+      height: 150px;
+      width: 150px;
+      position: relative;
+    }
+    .wedding-party-link{
+      text-decoration: none;
+    }
+    .nopic{
+      font-size: 8.2em;
+      opacity: 0.1;
+    }
+  }
+  .glyphicon.glyphicon-resize-horizontal{
+    font-size: 2em;
+  }
+
+  }
+  #wedding-party{
+    /*h1{font-family: 'Great Vibes', sans-serif; font-size: 4.5em; color:#fff;letter-spacing: 4px;}
+    color: black;*/
+
+  /*font-family: 'PT Sans', sans-serif; */
+    /*font-family: 'Righteous', cursive;*/
+    font-family: 'Indie Flower', cursive;
+  /*
+    font-family: 'Ubuntu Mono' ;
+    
+    
+    
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Raleway', sans-serif;
+  */
+
+    hr{
+      margin: 70px 0;
+    }
+    
+    h1{
+      font-family: 'Great Vibes', sans-serif;
+      font-size: 4em;
+      .mobile{ font-size: .7em;}
+    }
+
+    i{
+      font-family: 'Wire One', sans-serif; 
+      font-size: 2em;
+      line-height: 2.5em;
+      padding: none;
+      margin: none;
+      letter-spacing: 2px;
+      width: 100%;
+      height: 100%;
+    }
+    
+    span{
+      width: 50px;
+      height: 100px;
+      position: relative; 
+    }
+    
+
+    .groomsmen-link, .bridesmaid-link{font-family: 'Great Vibes', sans-serif; 
+    font-size: 3em; 
+    color:#fff;
+    letter-spacing: 4px; 
+    text-decoration: none;
+    }
+    .side-link{
+      font-family: 'Wire One', sans-serif; 
+      font-size: 2.5em;
+      text-decoration: none;
+    }
+
+    
+    
+  }
+  
+  
+  .photo-gallery{
+    padding-top: 50px;
+    width: 100%;
+    
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: #212426 url(../assets/dark_embroidery.png) 0 0 repeat fixed;
+    background-color: #212426;
+    
+    #slideshow{
+      border: 1px solid #000;
+      width: 740px;
+      margin: 20px auto 80px auto;
+      background-color: #000 ;
+
+    }
+
+  }
+  .venue{
+
+    .page-title{
+      font-family: 'Great Vibes', cursive;
+      color:#E28F72 ;
+      margin: 0 auto;
+    }
+    h1, h2, h3, h4 { 
+      font-family: 'Great Vibes', cursive;
+      color: #fff
+    }
+
+    color: #000;
+    /*width: 100%;*/
+    
+    position: relative;
+    overflow: hidden;
+    background: #212426 url(../assets/bgmap2.jpg) 0 80px no-repeat fixed;
+
+    .hotel-info{
+      background-color:rgba(0, 0, 0, 0.7);
+      margin-bottom: 100px;
+      padding: 70px;
+      /*padding: 20px;*/
+      /*font-family: 'Dawning of a New Day', cursive;*/
+      /*color: #E28F72;*/
+      /*font-family: 'PT Sans', sans-serif;*/
+
+      h1{
+        color: #E28F72;
+      }
+
+      .page-title{
+        font-family: 'Wire One', sans-serif;
+      }
+      h4{
+        color: #E28F72;
+      }
+      .address{
+        font-family: 'Ubuntu Mono';
+        color: #E2B9A0;
+
+        /*font-family: 'PT Sans', sans-serif;*/
+        /*font-family: 'Righteous', cursive;*/
+        /*font-family: 'Indie Flower', cursive;*/
+        /*font-family: 'Raleway', sans-serif;*/
+        /*font-family: 'Shadows Into Light Two', cursive;*/
+        /*font-family: 'Raleway', sans-serif;*/
+      }
+    }
+  
+    .text-content{
+      /*background-color: #B3B3B3;*/
+      background-color:rgba(179,179,179,0.7);
+      height: 400px;
+      width: 600px;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Great Vibes', sans-serif;
+
+      h3{ 
+        color: black;
+        font-size: 3em;
+      }
+      span{
+        font-size: 1.5em;
+        font-weight: lighter;
+
+      }
+      .date{
+        font-size: 2.5em;
+      }
+      p{
+        font-size: 1.5em;
+      }
+    }
+    .text-content-mobile{
+      background-color: #B3B3B3;
+      height: 400px;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Great Vibes', sans-serif;
+      h3{ 
+        color: black;
+        font-size: 2em;
+      }
+      span{
+        font-size: 1em;
+        font-weight: lighter;
+
+      }
+      .date{
+        font-size: 2em;
+      }
+      p{
+        font-size: 1em;
+      }
+    }
+  }
+  
+  .guestbook{
+    width: 100%;
+    position: relative;
+    background: #292929 url(../assets/sj_guestbook.jpg) 52% -150px no-repeat;
+    background-size:180% auto;
+    padding-top: 40px;
+
+
+
+    color: #333333;
+    h2{
+      font-family: 'Great Vibes', sans-serif; font-size: 5em;
+    }
+    .new{
+      h2{font-family: 'Great Vibes', sans-serif; font-size: 2.1em}
+      .quote{
+        text-align: center;
+        padding-top: none;
+      }
+      height: 650px;
+    }
+
+    background: #292929 url(../assets/sj_guestbook.jpg) 0% 0% no-repeat fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    /*iPhone 5 and 5S*/
+    @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background: #4C4C4C url(../assets/sj_guestbook.jpg) 0% 0% no-repeat;
+    }
+    /*iPhone 6*/
+        @media only screen 
+          and (min-device-width: 375px) 
+          and (max-device-width: 667px) 
+          and (-webkit-min-device-pixel-ratio: 2) { 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background: #292929 url(../assets/sj_guestbook.jpg) 0px 0% no-repeat;
         }
-		}
-		.index{
-			padding-top: 80px
-		}
-		
-		
-	}
-	.guestbook-name{
-		font-family: 'Great Vibes', sans-serif; font-size: 1.6em;
-		font-weight: 900;
-	}
-	.guestbook-msg{
-		font-family: 'Ek Mukta', sans-serif; font-size: 1em;
-	}
-	
+        /*iPhone 6+ */
+        @media only screen 
+          and (min-device-width: 414px) 
+          and (max-device-width: 736px) 
+          and (-webkit-min-device-pixel-ratio: 3) { 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background: #292929 url(../assets/sj_guestbook.jpg) 0% 0% no-repeat;
+
+          }
+          /*Galaxy S4*/  
+        @media screen 
+          and (device-width: 320px) 
+          and (device-height: 640px) 
+          and (-webkit-device-pixel-ratio: 3) {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background: #292929 url(../assets/sj_guestbook.jpg) 0% 0% no-repeat;
+          }
+           /*Galaxy 5*/  
+        @media screen 
+          and (device-width: 360px) 
+          and (device-height: 640px) 
+          and (-webkit-device-pixel-ratio: 3) {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background: #292929 url(../assets/sj_guestbook.jpg) 0% 0% no-repeat;
+          }
+    .index{
+      padding-top: 60px;
+      min-height: 550px;
+      a{ 
+        color: black;
+      }
+      
+    }
+    
+    
+  }
+  .guestbook-name{
+    font-family: 'Great Vibes', sans-serif; font-size: 1.6em;
+    font-weight: 900;
+  }
+  .guestbook-msg{
+    font-family: 'Ek Mukta', sans-serif; font-size: 1em;
+  }
+  
 }
