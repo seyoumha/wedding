@@ -1,9 +1,9 @@
 .content
   .guestbook.page
-    .new
+    .new.container
       .row
-        .col-md-5.col-md-offset-1
-          %h2 Please Leave a note for the newlyweds !
+        .col-md-6
+          %h2 Please Leave a note for the newlyweds!
           .well
             = form_for @guestbook, html: {multipart: true}  do |f|
               .form-group
@@ -13,11 +13,13 @@
                 =f.label :message
                 =f.text_area :message, class: 'form-control', rows: '3'
               .form-group
-                .col-lg-12
+                .col-md-12
                   =f.submit "Sign Guestbook", class: 'btn btn-info'
-            .clearfix
-        .col-md-3.col-md-offset-2
+              .clearfix
+        .col-md-6
           .new
             .quote
-              %h2 "This day I will marry my best friend, the one I laugh with, live for, dream with, love!  
+              %h2 "This day I will marry my best friend,
+              %h2 the one I laugh with, 
+              %h2 live for, dream with, and love!  
               =link_to 'View Guest book', guestbooks_path, class: 'btn btn-info'

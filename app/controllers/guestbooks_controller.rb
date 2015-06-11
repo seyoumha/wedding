@@ -1,7 +1,7 @@
 class GuestbooksController < ApplicationController
 	def index
 		@admin = (params[:admin] == 'true')
-		@guestbooks = Guestbook.all
+		@guestbooks = Guestbook.paginate(:page => params[:page])
 	end
 	def show
 	end
