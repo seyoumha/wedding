@@ -1,6 +1,6 @@
 lock '3.4.0'
 
-set :application, 'spui'
+set :application, 'wedding'
 set :repo_url, 'git@github.com:seyoumha/wedding.git'
 
 ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
