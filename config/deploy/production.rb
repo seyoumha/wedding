@@ -64,7 +64,7 @@ set :user, 'deployer'
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
-server '123.333.333.333',
+server 'jawiandsamra.com',
   roles: [:web, :app, :db],
   port: fetch(:port),
   user: fetch(:user),
