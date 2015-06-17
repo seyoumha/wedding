@@ -15,4 +15,5 @@
  * require slick-theme
  * require page
  *= require_tree .
+ *= require_self
  */
