@@ -123,8 +123,9 @@ font-family: 'Raleway', sans-serif;*/
     position: relative;
     overflow: hidden;
     text-align: center;
-    background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat fixed;
-      -webkit-background-size: cover;
+    background: #292929 url('sj1.jpg') 0% 0% no-repeat fixed;
+/*    background-image: asset-data-url("logo.png")
+*/      -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
