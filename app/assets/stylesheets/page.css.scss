@@ -123,7 +123,9 @@ font-family: 'Raleway', sans-serif;*/
     position: relative;
     overflow: hidden;
     text-align: center;
-   background-image: asset-data-url('sj1.jpg');
+    background-image: asset-data-url('sj1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
      -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -138,7 +140,8 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat;
+        background-image: asset-data-url('sj1.jpg');
+        background-repeat: no-repeat;
     }
     /*iPhone 6*/
     @media only screen 
@@ -149,7 +152,8 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat;
+        background-image: asset-data-url('sj1.jpg');
+        background-repeat: no-repeat;
     }
     /*iPhone 6+ */
     @media only screen 
@@ -160,7 +164,8 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat;
+        background-image: asset-data-url('sj1.jpg');
+        background-repeat: no-repeat;
 
       }
       /*Galaxy S4*/  
@@ -172,7 +177,8 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat;
+        background-image: asset-data-url('sj1.jpg');
+        background-repeat: no-repeat;
       }
        /*Galaxy S5*/  
     @media screen 
@@ -183,7 +189,8 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat
+        background-image: asset-data-url('sj1.jpg');
+        background-repeat: no-repeat;
       }
       /*ipad mini*/
     /*@media only screen 
@@ -194,7 +201,8 @@ font-family: 'Raleway', sans-serif;*/
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat
+    background-image: asset-data-url('sj1.jpg');
+    background-repeat: no-repeat;
 
 }*/
   /*ipad 3+4*/
@@ -206,7 +214,8 @@ font-family: 'Raleway', sans-serif;*/
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat
+    background-image: asset-data-url('sj1.jpg');
+    background-repeat: no-repeat;
 
 }*/
 /*galaxy tab*/
@@ -217,8 +226,8 @@ font-family: 'Raleway', sans-serif;*/
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat
-
+    background-image: asset-data-url('sj1.jpg');
+        background-repeat: no-repeat;
 }  */  
 
   
@@ -276,11 +285,14 @@ font-family: 'Raleway', sans-serif;*/
     position:relative;
     overflow:hidden;
     text-align: center;
-    background:#292929 asset-data-url('sj2.jpg') 0% 0% no-repeat fixed;
+    background-image: asset-data-url('sj2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
         /*iPhone 5 and 5S*/
     @media only screen 
       and (min-device-width: 320px) 
@@ -290,8 +302,11 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat;
-    }
+        background-image: asset-data-url('sj2.jpg');
+        background-repeat: no-repeat;
+        background-position: -150px, 0%;
+      }
+    
     /*iPhone 6*/
         @media only screen 
           and (min-device-width: 375px) 
@@ -301,7 +316,10 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 asset-data-url('sj2.jpg') -150px 0% no-repeat;
+            background-size: cover;
+            background-image: asset-data-url('sj2.jpg');
+            background-repeat: no-repeat;
+            background-position: -150px, 0%;
         }
         /*iPhone 6+ */
         @media only screen 
@@ -312,7 +330,10 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 asset-data-url('sj2.jpg') 0% 0% no-repeat;
+            background-size: cover;
+            background-image: asset-data-url('sj2.jpg');
+            background-repeat: no-repeat;
+            background-position: -150px, 0%;
 
           }
           /*Galaxy S4*/  
@@ -324,7 +345,10 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 asset-data-url('sj2.jpg') 0% 0% no-repeat;
+            background-size: cover;
+            background-image: asset-data-url('sj2.jpg');
+            background-repeat: no-repeat;
+            background-position: -150px, 0%;
           }
            /*Galaxy 5*/  
         @media screen 
@@ -335,7 +359,10 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 asset-data-url('sj2.jpg') 0% 0% no-repeat;
+            background-size: cover;
+            background-image: asset-data-url('sj2.jpg');
+            background-repeat: no-repeat;
+            background-position: -150px, 0%;
           }
           /*ipad mini*/
         /*@media only screen 
@@ -508,8 +535,11 @@ font-family: 'Raleway', sans-serif;*/
     position: relative;
     overflow: hidden;
     text-align: center;
-    background: #212426 asset-data-url('dark_embroidery.png') 0 0 repeat fixed;
-    background-color: #212426;
+    background-color: #21246;
+    background-image: asset-data-url('dark_embroidery.png');
+    background-repeat: repeat;
+    background-position: fixed;
+
     
     #slideshow{
       border: 1px solid #000;
@@ -624,7 +654,12 @@ font-family: 'Raleway', sans-serif;*/
   .guestbook{
     width: 100%;
     position: relative;
-    background: #292929 asset-data-url('sj_guestbook.jpg') 52% -150px no-repeat;
+    background-image: asset-data-url('sj_guestbook.jpg');
+    background-repeat: no-repeat;
+    background-color: #292929;
+    background-position: 52% -150%;
+
+
     background-size:180% auto;
     padding-top: 40px;
 
@@ -634,6 +669,7 @@ font-family: 'Raleway', sans-serif;*/
     h2{
       font-family: 'Great Vibes', sans-serif; font-size: 5em;
     }
+    
     .new{
       h2{font-family: 'Great Vibes', sans-serif; font-size: 2.1em}
       .quote{
@@ -643,11 +679,14 @@ font-family: 'Raleway', sans-serif;*/
       height: 650px;
     }
 
-    background: #292929 asset-data-url('sj_guestbook.jpg') 0% 0% no-repeat fixed;
+    /*background: #292929 asset-data-url('sj_guestbook.jpg') 0% 0% no-repeat fixed;
+    background-image: asset-data-url('sj_guestbook.jpg');
+    background-repeat: no-repeat;
+    background-color: #292929;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover;
+      background-size: cover;*/
     /*iPhone 5 and 5S*/
     @media only screen 
       and (min-device-width: 320px) 
@@ -657,7 +696,9 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #4C4C4C asset-data-url('sj_guestbook.jpg') 0% 0% no-repeat;
+        background-image: asset-data-url('sj_guestbook.jpg');
+        background-repeat: no-repeat;
+        background-color: #292929;
     }
     /*iPhone 6*/
         @media only screen 
@@ -668,7 +709,9 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 asset-data-url('sj_guestbook.jpg') 0px 0% no-repeat;
+            background-image: asset-data-url('sj_guestbook.jpg');
+            background-repeat: no-repeat;
+            background-color: #292929;
         }
         /*iPhone 6+ */
         @media only screen 
@@ -679,7 +722,9 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 asset-data-url('sj_guestbook.jpg') 0% 0% no-repeat;
+            background-image: asset-data-url('sj_guestbook.jpg');
+            background-repeat: no-repeat;
+            background-color: #292929;
 
           }
           /*Galaxy S4*/  
@@ -691,7 +736,9 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 asset-data-url('sj_guestbook.jpg') 0% 0% no-repeat;
+            background-image: asset-data-url('sj_guestbook.jpg');
+            background-repeat: no-repeat;
+            background-color: #292929;
           }
            /*Galaxy 5*/  
         @media screen 
@@ -702,7 +749,10 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 asset-data-url('sj_guestbook.jpg') 0% 0% no-repeat;
+            background-size: cover;
+            background-image: asset-data-url('sj_guestbook.jpg');
+            background-repeat: no-repeat;
+            background-color: #292929;
           }
     .index{
       padding-top: 60px;
