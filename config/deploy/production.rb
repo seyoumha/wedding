@@ -17,7 +17,7 @@
 # property set. Specify the username and a domain or IP for the server.
 # Don't use `:all`, it's a meta role.
 
-# role :app, %w{deploy@example.com}, my_property: :my_value
+role :app, %w{deploy@jawiandsamra.com}
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
 
@@ -70,13 +70,18 @@ server 'jawiandsamra.com',
   user: fetch(:user),
   primary: true
 
+set :branch, 'master'
+
+
 set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 
-set :ssh_options, {
-  forward_agent: true,
-  auth_methods: %w(publickey),
-  user: 'deployer',
-}
+
+# set :ssh_options, {
+#   forward_agent: true,
+#   auth_methods: %w(publickey),
+#   user: 'deployer',
+# }
 
 set :rails_env, :production
 set :conditionally_migrate, true 
+set :normalize_asset_timestamps, %{public/images public/javascripts public/stylesheets}
