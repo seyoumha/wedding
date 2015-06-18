@@ -123,7 +123,7 @@ font-family: 'Raleway', sans-serif;*/
     position: relative;
     overflow: hidden;
     text-align: center;
-   background-image: asset-data-url("sj1.jpg");
+   background-image: asset-data-url('"sj1.jpg");
      -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -138,7 +138,7 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat;
+        background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat;
     }
     /*iPhone 6*/
     @media only screen 
@@ -149,7 +149,7 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat;
+        background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat;
     }
     /*iPhone 6+ */
     @media only screen 
@@ -160,7 +160,7 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat;
+        background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat;
 
       }
       /*Galaxy S4*/  
@@ -172,7 +172,7 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat;
+        background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat;
       }
        /*Galaxy S5*/  
     @media screen 
@@ -183,7 +183,7 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat
+        background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat
       }
       /*ipad mini*/
     /*@media only screen 
@@ -194,7 +194,7 @@ font-family: 'Raleway', sans-serif;*/
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat
+    background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat
 
 }*/
   /*ipad 3+4*/
@@ -206,7 +206,7 @@ font-family: 'Raleway', sans-serif;*/
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat
+    background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat
 
 }*/
 /*galaxy tab*/
@@ -217,7 +217,7 @@ font-family: 'Raleway', sans-serif;*/
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat
+    background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat
 
 }  */  
 
@@ -276,7 +276,7 @@ font-family: 'Raleway', sans-serif;*/
     position:relative;
     overflow:hidden;
     text-align: center;
-    background:#292929 url(../assets/sj2.jpg) 0% 0% no-repeat fixed;
+    background:#292929 asset-data-url('sj2.jpg') 0% 0% no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -290,7 +290,7 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 url(../assets/sj1.jpg) 0% 0% no-repeat;
+        background: #292929 asset-data-url('sj1.jpg') 0% 0% no-repeat;
     }
     /*iPhone 6*/
         @media only screen 
@@ -301,7 +301,7 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 url(../assets/sj2.jpg) -150px 0% no-repeat;
+            background: #292929 asset-data-url('sj2.jpg') -150px 0% no-repeat;
         }
         /*iPhone 6+ */
         @media only screen 
@@ -312,7 +312,7 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 url(../assets/sj2.jpg) 0% 0% no-repeat;
+            background: #292929 asset-data-url('sj2.jpg') 0% 0% no-repeat;
 
           }
           /*Galaxy S4*/  
@@ -324,7 +324,7 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 url(../assets/sj2.jpg) 0% 0% no-repeat;
+            background: #292929 asset-data-url('sj2.jpg') 0% 0% no-repeat;
           }
            /*Galaxy 5*/  
         @media screen 
@@ -335,7 +335,7 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 url(../assets/sj2.jpg) 0% 0% no-repeat;
+            background: #292929 asset-data-url('sj2.jpg') 0% 0% no-repeat;
           }
           /*ipad mini*/
         /*@media only screen 
@@ -346,7 +346,7 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 url(../assets/sj2.jpg) 0% 0% no-repeat
+            background: #292929 asset-data-url('sj2.jpg') 0% 0% no-repeat
 
         }*/
       /*ipad 3+4*/
@@ -358,7 +358,7 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 url(../assets/sj2.jpg) 0% 0% no-repeat
+        background: #292929 asset-data-url('sj2.jpg') 0% 0% no-repeat
 
     }*/
     /*galaxy tab*/
@@ -369,7 +369,7 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #292929 url(../assets/sj2.jpg) 0% 0% no-repeat
+        background: #292929 asset-data-url('sj2.jpg') 0% 0% no-repeat
 
     }    */
 
@@ -508,7 +508,7 @@ font-family: 'Raleway', sans-serif;*/
     position: relative;
     overflow: hidden;
     text-align: center;
-    background: #212426 url(../assets/dark_embroidery.png) 0 0 repeat fixed;
+    background: #212426 asset-data-url('dark_embroidery.png') 0 0 repeat fixed;
     background-color: #212426;
     
     #slideshow{
@@ -537,7 +537,7 @@ font-family: 'Raleway', sans-serif;*/
     
     position: relative;
     overflow: hidden;
-    background: #212426 url(../assets/bgmap2.jpg) 0 80px no-repeat fixed;
+    background: #212426 asset-data-url('bgmap2.jpg') 0 80px no-repeat fixed;
 
     .hotel-info{
       background-color:rgba(0, 0, 0, 0.7);
@@ -624,7 +624,7 @@ font-family: 'Raleway', sans-serif;*/
   .guestbook{
     width: 100%;
     position: relative;
-    background: #292929 url(../assets/sj_guestbook.jpg) 52% -150px no-repeat;
+    background: #292929 asset-data-url('sj_guestbook.jpg') 52% -150px no-repeat;
     background-size:180% auto;
     padding-top: 40px;
 
@@ -643,7 +643,7 @@ font-family: 'Raleway', sans-serif;*/
       height: 650px;
     }
 
-    background: #292929 url(../assets/sj_guestbook.jpg) 0% 0% no-repeat fixed;
+    background: #292929 asset-data-url('sj_guestbook.jpg') 0% 0% no-repeat fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -657,7 +657,7 @@ font-family: 'Raleway', sans-serif;*/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background: #4C4C4C url(../assets/sj_guestbook.jpg) 0% 0% no-repeat;
+        background: #4C4C4C asset-data-url('sj_guestbook.jpg') 0% 0% no-repeat;
     }
     /*iPhone 6*/
         @media only screen 
@@ -668,7 +668,7 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 url(../assets/sj_guestbook.jpg) 0px 0% no-repeat;
+            background: #292929 asset-data-url('sj_guestbook.jpg') 0px 0% no-repeat;
         }
         /*iPhone 6+ */
         @media only screen 
@@ -679,7 +679,7 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 url(../assets/sj_guestbook.jpg) 0% 0% no-repeat;
+            background: #292929 asset-data-url('sj_guestbook.jpg') 0% 0% no-repeat;
 
           }
           /*Galaxy S4*/  
@@ -691,7 +691,7 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 url(../assets/sj_guestbook.jpg) 0% 0% no-repeat;
+            background: #292929 asset-data-url('sj_guestbook.jpg') 0% 0% no-repeat;
           }
            /*Galaxy 5*/  
         @media screen 
@@ -702,7 +702,7 @@ font-family: 'Raleway', sans-serif;*/
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            background: #292929 url(../assets/sj_guestbook.jpg) 0% 0% no-repeat;
+            background: #292929 asset-data-url('sj_guestbook.jpg') 0% 0% no-repeat;
           }
     .index{
       padding-top: 60px;
