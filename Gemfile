@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 gem 'haml-rails'
 gem 'will_paginate', '~> 3.0.6'
-
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
