@@ -1,25 +1,26 @@
 .content
   .guestbook.page
-    .new.container
-      .row
-        .col-md-6
-          %h2 Please Leave a note for the newlyweds!
-          .well
-            = form_for @guestbook, html: {multipart: true}  do |f|
-              .form-group
-                =f.label :name
-                =f.text_field :name, class: 'form-control'
-              .form-group
-                =f.label :message
-                =f.text_area :message, class: 'form-control', rows: '3'
-              .form-group
-                .col-md-12
-                  =f.submit "Sign Guestbook", class: 'btn btn-info'
-              .clearfix
-        .col-md-6
-          .new
-            .quote
-              %h2 "This day I will marry my best friend,
-              %h2 the one I laugh with, 
-              %h2 live for, dream with, and love!  
-              =link_to 'View Guest book', guestbooks_path, class: 'btn btn-info'
+    .bg
+      .new.container
+        .row
+          .col-md-6
+            %h2 Please Leave a note for the newlyweds!
+            .well
+              = form_for @guestbook, html: {multipart: true}  do |f|
+                .form-group
+                  =f.label :name
+                  =f.text_field :name, class: 'form-control'
+                .form-group
+                  =f.label :message
+                  =f.text_area :message, class: 'form-control', rows: '3'
+                .form-group
+                  .col-md-12
+                    =f.submit "Sign Guestbook", class: 'btn btn-info'
+                .clearfix
+          .col-md-6
+            .new
+              .quote
+                %h2 "This day I will marry my best friend,
+                %h2 the one I laugh with, 
+                %h2 live for, dream with, and love!  
+                =link_to 'View Guest book', guestbooks_path, class: 'btn btn-info'

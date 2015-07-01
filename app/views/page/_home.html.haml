@@ -1,30 +1,27 @@
 .row.hidden-xs.hidden-sm
   .col-md-offset-6
     .content
-      .line1.hide Samra & Jawi
-      .line2.hide are getting married
-      .line3.hide October 10th, 2015
+      .line1 Samra & Jawi
+      .line2 are getting married
+      .line3 October 10th, 2015
   .row
-    .col-sm-offset-6
-      =link_to "",  "#{root_url}#our-story", class: 'glyphicon glyphicon-menu-down'
+    .col-sm-3.col-sm-offset-8
+      .scroll-down Scroll down for more
 .row
   .col-xs-5.hidden-md.hidden-lg.hidden-sm.mobil
-    .line1.hide Samra & Jawi
-    .line2.hide are getting married
-    .line3.hide October 10th, 2015
+    .line1 Samra & Jawi
+    .line2 are getting married
+    .line3 October 10th, 2015
 .row
   .col-sm-6
   .col-sm-6.hidden-md.hidden-lg.hidden-xs
-    .line1.hide Samra & Jawi
-    .line2.hide are getting married
-    .line3.hide October 10th, 2015
-
+    .line1 Samra & Jawi
+    .line2 are getting married
+    .line3 October 10th, 2015
+    
   
 :javascript
 
-$(document).ready(function () {
-  $('.line1').fadeIn(4000).removeClass('hide');
-  $('.line2').fadeIn(6000).removeClass('hide');
-  $('.line3').fadeIn(8000).removeClass('hide');
-  
-});
+  $(".line1, .line2, .line3").hide().each(function(i) {
+    $(this).delay(i*800).fadeIn(800);
+  });

@@ -11,7 +11,8 @@
  *= require_self
  *= require bootstrap 
  *= require guestbook
+ *= require page
  *= require slick
  *= require slick-theme
- *= require page
+ 
  */

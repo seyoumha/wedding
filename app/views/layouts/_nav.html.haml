@@ -24,9 +24,8 @@
           =link_to 'Guestbook', new_guestbook_path
 :javascript
   $('.nav li a').on('click', function() {
-  alert('owow')
     $(this).parent().find('.active').removeClass('active');
     $(this).parent().addClass('active');
-});
+  });
 
 
