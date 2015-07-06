@@ -1,7 +1,10 @@
 .content
   .guestbook
     .bg
-      .page.index
+      .page.index 
+        - if flash[:notice]
+          .alert.alert-dismissible.alert-info
+            = flash[:notice] 
         .row
           .col-md-6.col-md-offset-1
             %h2.text-right Guest books  

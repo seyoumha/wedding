@@ -211,6 +211,8 @@
     background-color: #808080;
     overflow: scroll;
     width: 100%;
+    min-height: 550px;
+    color: #ffffff;
     .keyframe{
       margin: 10px 10px;
       i{
@@ -240,6 +242,12 @@
 
   }
   .proposal{
+    h2{font-family: 'Raleway', sans-serif;
+      font-size: 2em;}
+    p{
+      font-family: 'Raleway', sans-serif;
+      font-size: 1em;
+    }
     min-height: 450px;
     .mobile{
       font-size: .7em;
@@ -287,13 +295,7 @@
             background-position: 50%;
             background-size: cover;
             margin: 0 auto;
-            max-height: 300px;
             max-width: 1000px;
-            /*background-position: center;
-            -webkit-background-size: 20%;
-            -moz-background-size: 20%;
-            -o-background-size: 20%;
-            background-size: 20%;*/
             background-image: asset-data-url('sj2.jpg');
             background-repeat: no-repeat;
             
@@ -610,7 +612,7 @@
       }
     }
     .index{
-      min-height: 400px;
+      min-height: 800px;
       max-height: 1000px;
       a{ color: black;}
     }

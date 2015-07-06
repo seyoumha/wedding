@@ -13,7 +13,8 @@ class GuestbooksController < ApplicationController
 	def create
 		@guestbook = Guestbook.new(guestbook_params)
 		@guestbook.save
-		redirect_to guestbooks_path
+		flash[:notice]= 'Thank You for signing our guestbook.'
+		redirect_to guestbooks_path 
 	end
 	def update
 		@guestbook = Guestbook.find(params[:id])
