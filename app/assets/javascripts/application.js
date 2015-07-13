@@ -18,4 +18,5 @@
 //= require jssor.slider.mini
 //= require page
 //= require slick.min
+//= require jquery.jplayer
 // require_tree .

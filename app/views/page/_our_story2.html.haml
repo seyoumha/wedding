@@ -1,4 +1,12 @@
-%h1.text-center Our Story
+.hidden-md.hidden-lg.mobile
+  %h1.text-center Our Story
+  .text-center.instruction Swipe left or right 
+.hidden-sm.hidden-xs
+  %h1.text-center Our Story
+  #right-arrow.pull-right.arrows
+    %i.fa.fa-arrow-circle-o-right
+  #left-arrow.pull-left.arrows
+    %i.fa.fa-arrow-circle-o-left
 .container
   #our-story-slideshow
     .keyframe
@@ -37,14 +45,12 @@
       %i November 24th 2014
       %p Jawi got down on one knee and asked for her hand in marriage. She said Yes!!  November 25th, 2014, Jawi and Samra left for the US so he can meet the rest of her family and friends. The big day is going to be on October 10th, 2015 and the love story continues...
 
-#right-arrow.pull-right.arrows NEXT >>
-#left-arrow.pull-left.arrows << PREV
 
 :javascript
   $('#our-story-slideshow').slick({
     mobileFirst: true,
-    nextArrow: '#right-arrow',
-    prevArrow: '#left-arrow'
+    nextArrow: '#our-story #right-arrow',
+    prevArrow: '#our-story #left-arrow'
 
     // dots: true,
     // infinite: true,

@@ -15,7 +15,10 @@
 // font-family: 'Shadows Into Light Two', cursive;
 // font-family: 'Raleway', sans-serif;
 
-
+.instruction{
+  font-family: 'PT Sans', sans-serif;
+  
+}
 .kitiltil{
   font-family: 'Great Vibes', sans-serif;
 }
@@ -38,6 +41,12 @@
   font-size: 2em;
 }
 
+#music-player{
+}
+.jp-audio{
+  color: #959079;
+  padding: 5px;
+}
 
 .content{
   .page{
@@ -104,20 +113,20 @@
     @media only screen 
       and (min-device-width: 320px) 
       and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2) {
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+      and (-webkit-min-device-pixel-ratio: 1) {
+        -webkit-background-size: 680px 680px;
+        -moz-background-size: 680px 680px;
+        -o-background-size: 680px 680px;
+        background-size: 880px 680px;
         background-image: asset-data-url('sj1.jpg');
         background-repeat: no-repeat;
-        background-position: 0% 0%;
+        background-position: 0px 40px;
     }
     /*iPhone 6*/
     @media only screen 
       and (min-device-width: 375px) 
       and (max-device-width: 667px) 
-      and (-webkit-min-device-pixel-ratio: 2) { 
+      and (-webkit-min-device-pixel-ratio: 1) { 
         -webkit-background-size: 680px 680px;
         -moz-background-size: 680px 680px;
         -o-background-size: 680px 680px;
@@ -208,28 +217,38 @@
   }
   .our-story{
     padding-top: 50px;
-    background-color: #808080;
+    background-color: #696969;
     overflow: scroll;
     width: 100%;
     min-height: 550px;
     color: #ffffff;
+    .mobile{
+      h1{
+      font-family: 'Great Vibes', sans-serif; 
+        font-size: 3.5em;
+      }
+      p{
+        font-size: 1.5em;
+      }
+    }
     .keyframe{
-      margin: 10px 10px;
+      margin: 30px 30px;
       i{
-        color: #ffffff;
+        color: #FFA800;
         font-weight: bold;
         font-size: 2.5em;
         font-family: 'Indie Flower', cursive;
       }
     }
     .arrows{
-      font-family: 'Ubuntu Mono' ;
-      font-size: 3em;
+      font-size: 3.5em;
+      margin: 80px 30px 80px 30px;
       cursor: pointer;
     }
+
     p{
       font-family: 'Indie Flower', cursive;
-      font-size: 2em;
+      font-size: 1.7em;
     }
     
     h3{
@@ -237,8 +256,6 @@
       font-size: 2em;
       font-family: 'Indie Flower', cursive;
     }
-
-    
 
   }
   .proposal{
@@ -248,7 +265,7 @@
       font-family: 'Raleway', sans-serif;
       font-size: 1em;
     }
-    min-height: 450px;
+    min-height: 550px;
     .mobile{
       font-size: .7em;
       font-family: 'Great Vibes', sans-serif;
@@ -260,8 +277,8 @@
 
 
     padding-top: 50px;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     position:relative;
     overflow:hidden;
     text-align: center;
@@ -281,7 +298,7 @@
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
+        background-size: 20%;
         background-image: asset-data-url('sj2.jpg');
         background-repeat: no-repeat;
         background-position: -150px, 0%;
@@ -293,7 +310,7 @@
           and (max-device-width: 667px) 
           and (-webkit-min-device-pixel-ratio: 2) { 
             background-position: 50%;
-            background-size: cover;
+            background-size: 50%;
             margin: 0 auto;
             max-width: 1000px;
             background-image: asset-data-url('sj2.jpg');
@@ -401,10 +418,10 @@
     /*h1{font-family: 'Great Vibes', sans-serif; font-size: 4.5em; color:#fff;letter-spacing: 4px;}
     color: black;*/
 
-  /*font-family: 'PT Sans', sans-serif; */
+    /*font-family: 'PT Sans', sans-serif; */
     /*font-family: 'Righteous', cursive;*/
     font-family: 'Indie Flower', cursive;
-  /*
+    /*
     font-family: 'Ubuntu Mono' ;
     
     
@@ -412,7 +429,7 @@
     font-family: 'Raleway', sans-serif;
     font-family: 'Shadows Into Light Two', cursive;
     font-family: 'Raleway', sans-serif;
-  */
+    */
 
     hr{
       margin: 70px 0;
@@ -452,12 +469,8 @@
       font-family: 'Wire One', sans-serif; 
       font-size: 2.5em;
       text-decoration: none;
-    }
-
-    
-    
+    }  
   }
-  
   
   .photo-gallery{
     padding-top: 50px;
@@ -472,12 +485,22 @@
     background-position: fixed;
 
     
+    #slideshow-control{
+      color: red;
+    }
+
     #slideshow{
       border: 1px solid #000;
       width: 740px;
       margin: 20px auto 80px auto;
       background-color: #000 ;
 
+    }
+
+    .arrows{
+      font-size: 3.5em;
+      margin: 200px 30px;
+      cursor: pointer;
     }
 
   }
@@ -683,10 +706,7 @@
             background-image: asset-data-url('sj_guestbook.jpg');
             background-repeat: no-repeat;
             background-color: #292929;
-          }
-
-    
-    
+          }  
   }
   .guestbook-name{
     font-family: 'Great Vibes', sans-serif; font-size: 1.6em;

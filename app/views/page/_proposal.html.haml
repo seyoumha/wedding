@@ -1,15 +1,18 @@
 .container
   .row.hidden-sm.hidden-xs
-    .col-lg-5.col-md-6.text-left
+    .col-md-12.text-center
       %h1 The Proposal Story
+    .btn-group.pull-left.buttons
+      =link_to "Read Jawi's Version",'#', class: 'jawi btn btn-default'
+    .btn-group.pull-right.buttons  
+      = link_to "Read Samra's Version","#", class: 'samra btn btn-default'
   .row.hidden-md.hidden-lg.mobile
     .col-xs-12
       %h1 The Proposal
+    .btn-group.pull-left.buttons
+      =link_to "Read Jawi's Version",'#', class: 'jawi btn btn-default'
+      = link_to "Read Samra's Version","#", class: 'samra btn btn-default'
 
-
-  .btn-group.pull-left.buttons
-    =link_to "Read Jawi's Version",'#', class: 'jawi btn btn-default'
-    = link_to "Read Samra's Version","#", class: 'samra btn btn-default'
   .row
     .col-md-12
       .story-groom
