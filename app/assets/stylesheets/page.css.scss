@@ -309,79 +309,57 @@
       and (min-device-width: 320px) 
       and (max-device-width: 568px)
       and (-webkit-min-device-pixel-ratio: 2) {
+        background-image: none;
         background-color: #FF8000;
       }
     
     /*iPhone 6*/
-        @media only screen 
+    @media only screen 
       and (min-device-width: 375px) 
       and (max-device-width: 667px) 
       and (-webkit-min-device-pixel-ratio: 2) { 
+        background-image: none;
         background-color: #FF8000;
     }
         /*iPhone 6+ */
-        @media only screen 
-          and (min-device-width: 414px) 
-          and (max-device-width: 736px) 
-          and (-webkit-min-device-pixel-ratio: 3) { 
-            background-color: #FF8000;
+    @media only screen 
+      and (min-device-width: 414px) 
+      and (max-device-width: 736px) 
+      and (-webkit-min-device-pixel-ratio: 3) { 
+        background-image: none;
+        background-color: #FF8000;
 
-          }
+      }
           /*Galaxy S4*/  
-        @media screen 
-          and (device-width: 320px) 
-          and (device-height: 640px) 
-          and (-webkit-device-pixel-ratio: 3) {
-            background-color: #FF8000;
-          }
+    @media screen 
+      and (device-width: 320px) 
+      and (device-height: 640px) 
+      and (-webkit-device-pixel-ratio: 3) {
+        background-image: none;
+        background-color: #FF8000;
+      }
            /*Galaxy 5*/  
-        @media screen 
-          and (device-width: 360px) 
-          and (device-height: 640px) 
-          and (-webkit-device-pixel-ratio: 3) {
-           background-color: #FF8000;
-          }
+    @media screen 
+      and (device-width: 360px) 
+      and (device-height: 640px) 
+      and (-webkit-device-pixel-ratio: 3) {
+        background-image: none;
+        background-color: #FF8000;
+      }
 
-          /*ipad mini*/
-    /*@media only screen 
+    /*ipad 3+4*/
+    @media only screen 
       and (min-device-width: 768px) 
       and (max-device-width: 1024px) 
-      and (-webkit-min-device-pixel-ratio: 1) {
-        -webkit-background-size: 100% 680px;
-        -moz-background-size: 100% 680px;
-        -o-background-size: 100% 680px;
-        background-size: 100% 680px;
-        background-image: asset-data-url('sj1.jpg');
-        background-repeat: no-repeat;
-        background-position: 0px 0px;*/
-
-
-
-/*}*/
-  /*ipad 3+4*/
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-      /*-webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      background-image: asset-data-url('sj1.jpg');
-      background-repeat: no-repeat;
-      background-position: 0px 0px;*/
-
-      -webkit-background-size: 120% 900px;
-      -moz-background-size: 120% 900px;
-      -o-background-size: 120% 900px;
-      background-size: 120% 900px;
-      background-image: asset-data-url('proposalTest.jpg');
-      background-repeat: no-repeat;
-      background-position: -0px 1150px;
-
-
-
-}
+      and (-webkit-min-device-pixel-ratio: 2) {
+          -webkit-background-size: 120% 900px;
+          -moz-background-size: 120% 900px;
+          -o-background-size: 120% 900px;
+          background-size: 120% 900px;
+          background-image: asset-data-url('proposalTest.jpg');
+          background-repeat: no-repeat;
+          background-position: -0px 1150px;
+      }
 
 
     .jawi, .samra{
@@ -391,6 +369,8 @@
       color: #535353;
     }
   }
+
+
   .wedding-party{
     width: 100%;
     padding-top: 50px;
