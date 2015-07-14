@@ -1,4 +1,6 @@
 class GuestbooksController < ApplicationController
+	before_action :stop_music
+	
 	def index
 		@admin = (params[:admin] == 'true')
 		@guestbooks = Guestbook.paginate(:page => params[:page])
@@ -36,3 +38,4 @@ private
 	def guestbook_params
 		params.require(:guestbook).permit(:name, :message)
 	end
+	

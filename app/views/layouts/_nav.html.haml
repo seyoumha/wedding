@@ -24,7 +24,7 @@
           =link_to 'Guestbook', new_guestbook_path
 
       .navbar-right
-        = render 'layouts/music_player'
+        = render 'layouts/music_player' unless @stop_music
         
 :javascript
   $('.nav li a').on('click', function() {
