@@ -282,14 +282,14 @@
       and (min-device-width: 320px) 
       and (max-device-width: 568px)
       and (-webkit-min-device-pixel-ratio: 2) {
-         -webkit-background-size: 320%;
-          -moz-background-size: 320%;
-          -o-background-size: 320%;
-          background-size: 320%;
-          background-image: asset-data-url('proposalTest.jpg');
-          background-repeat: no-repeat;
-          background-position: -400px 1350px;
-          background-color: #292929
+         background-image: asset-data-url('proposalRing.jpg');
+        -webkit-background-size: 120%;
+          -moz-background-size: 120%;
+          -o-background-size: 120%;
+        background-size: 120%;
+        min-height: 400px;
+        background-position: -60px -10px;
+        background-repeat: repeat;
         
         
       }
@@ -299,10 +299,10 @@
       and (min-device-width: 375px) 
       and (max-device-width: 667px) 
       and (-webkit-min-device-pixel-ratio: 2) { 
-        /*background-image: none;
-        background-color: #FF8000;*/
-
         background-image: asset-data-url('proposalRing.jpg');
+        -webkit-background-size: 120%;
+          -moz-background-size: 120%;
+          -o-background-size: 120%;
         background-size: 120%;
         min-height: 400px;
         background-position: -60px -10px;
@@ -313,14 +313,14 @@
       and (min-device-width: 414px) 
       and (max-device-width: 736px) 
       and (-webkit-min-device-pixel-ratio: 3) { 
-         -webkit-background-size: 300%;
-          -moz-background-size: 300%;
-          -o-background-size: 300%;
-          background-size: 300%;
-          background-image: asset-data-url('proposalTest.jpg');
-          background-repeat: no-repeat;
-          background-position: -400px 1400px;
-          background-color: #292929
+         background-image: asset-data-url('proposalRing.jpg');
+        -webkit-background-size: 120%;
+          -moz-background-size: 120%;
+          -o-background-size: 120%;
+        background-size: 120%;
+        min-height: 400px;
+        background-position: -60px -10px;
+        background-repeat: repeat;
 
       }
           /*Galaxy S4*/  
@@ -328,28 +328,28 @@
       and (device-width: 320px) 
       and (device-height: 640px) 
       and (-webkit-min-device-pixel-ratio: 3) {
-         -webkit-background-size: 300%;
-          -moz-background-size: 300%;
-          -o-background-size: 300%;
-          background-size: 300%;
-          background-image: asset-data-url('proposalTest.jpg');
-          background-repeat: no-repeat;
-          background-position: -400px 1400px;
-          background-color: #292929
+         background-image: asset-data-url('proposalRing.jpg');
+        -webkit-background-size: 120%;
+          -moz-background-size: 120%;
+          -o-background-size: 120%;
+        background-size: 120%;
+        min-height: 400px;
+        background-position: -60px -10px;
+        background-repeat: repeat;
       }
            /*Galaxy 5*/  
     @media screen 
       and (device-width: 360px) 
       and (device-height: 640px) 
       and (-webkit-device-pixel-ratio: 3) {
-         -webkit-background-size: 300%;
-          -moz-background-size: 300%;
-          -o-background-size: 300%;
-          background-size: 300%;
-          background-image: asset-data-url('proposalTest.jpg');
-          background-repeat: no-repeat;
-          background-position: -400px 1400px;
-          background-color: #292929
+         background-image: asset-data-url('proposalRing.jpg');
+        -webkit-background-size: 120%;
+          -moz-background-size: 120%;
+          -o-background-size: 120%;
+        background-size: 120%;
+        min-height: 400px;
+        background-position: -60px -10px;
+        background-repeat: repeat;
       }
 
     /*ipad 3+4*/
