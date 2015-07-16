@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:3000/#home -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Wedding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link data-turbolinks-track="true" href="http://localhost:3000/assets/application.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/bootstrap.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/guestbook.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/page.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/slick.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/font-awesome.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/slick-theme.css?body=1" media="all" rel="stylesheet">
+  <link data-turbolinks-track="true" href="http://fonts.googleapis.com/css?family=Wire+One|Ek+Mukta:200,400|Great+Vibes|Dawning+of+a+New+Day|Ubuntu+Mono|PT+Sans|Righteous|Indie+Flower|Raleway|Shadows+Into+Light+Two|Rock+Salt" media="all" rel="stylesheet">
+  <script data-turbolinks-track="true" src="./Wedding_files/jquery.js"></script>
+<script data-turbolinks-track="true" src="./Wedding_files/jquery_ujs.js"></script>
+<script data-turbolinks-track="true" src="./Wedding_files/bootstrap.js"></script>
+<script data-turbolinks-track="true" src="./Wedding_files/turbolinks.js"></script>
+<script data-turbolinks-track="true" src="./Wedding_files/ScrollMagic.min.js"></script>
+<script data-turbolinks-track="true" src="./Wedding_files/jssor.slider.mini.js"></script>
+<script data-turbolinks-track="true" src="./Wedding_files/page.js"></script>
+<script data-turbolinks-track="true" src="./Wedding_files/slick.min.js"></script>
+<script data-turbolinks-track="true" src="./Wedding_files/jquery.jplayer.js"></script>
+<script data-turbolinks-track="true" src="./Wedding_files/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="4twlzEqPwxtUhgOqpcCDwWNFui0b4Smjt/56RI6IA/0=" name="csrf-token">
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="./Wedding_files/Wedding.html">Home</a>
+        </li>
+        <li>
+          <a href="http://localhost:3000/#our-story">Our Story</a>
+        </li>
+        <li>
+          <a href="http://localhost:3000/#the-proposal">The Proposal</a>
+        </li>
+        <li>
+          <a href="http://localhost:3000/#wedding-party">Wedding Party</a>
+        </li>
+        <li>
+          <a href="http://localhost:3000/#photo-gallery">Photo Gallery</a>
+        </li>
+        <li>
+          <a href="http://localhost:3000/#venue">Venue Info</a>
+        </li>
+        <li>
+          <a href="http://localhost:3000/guestbooks/new">Guestbook</a>
+        </li>
+      </ul>
+      <div class="navbar-right">
+        <div class="jp-jplayer" id="music-player" style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_0" preload="metadata" src="http://localhost:3000/audio/wedding-song.mp3" title="Bubble"></audio></div>
+        <div aria-label="media player" class="jp-audio jp-state-playing" id="jp_container_1" role="application">
+          <div class="jp-type-single">
+            <div class="jp-gui jp-interface">
+              <div class="jp-controls">
+                <i class="fa fa-play jp-play" role="button" tabindex="0" style="display: none;"></i>
+                <i class="fa fa-pause jp-pause" role="button" tabindex="0" style="display: inline-block;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          $(function(){
+            $('#music-player').jPlayer({
+              ready: function(event){
+                $(this).jPlayer("setMedia", {
+                  title: "Bubble",
+                  mp3: "/audio/wedding-song.mp3"
+                }).jPlayer("play");
+              },
+              swfPath: "/swf/",
+              supplied: "mp3",
+              wmode: "window",
+              useStateClassSkin: true,
+              autoBlur: false,
+              smoothPlayBar: true,
+              keyEnabled: true,
+              remainingDuration: true,
+              toggleDuration: true,
+              autoPlay: true,
+              volume: 0.25
+            });
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+  $('.nav li a').on('click', function() {
+    $(this).parent().parent().find('li.active').removeClass('active');
+    $(this).parent().addClass('active');
+  });
+</script>
+
+	<!-- welcome page -->
+<div class="clear-fix clearfix"></div>
+<div class="content">
+  <div class="page home" id="home">
+    <div class="row hidden-xs hidden-sm">
+      <div class="col-md-offset-6">
+        <div class="content">
+          <div class="line1" style="display: block;">Samra &amp; Jawi</div>
+          <div class="line2" style="display: block;">are getting married</div>
+          <div class="line3" style="display: block;">October 10th, 2015</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-8">
+          <div class="scroll-down">Scroll down for more</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-5 hidden-md hidden-lg hidden-sm mobil">
+        <div class="line1" style="display: block;">Samra &amp; Jawi</div>
+        <div class="line2" style="display: block;">are getting married</div>
+        <div class="line3" style="display: block;">October 10th, 2015</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6"></div>
+      <div class="col-sm-6 hidden-md hidden-lg hidden-xs">
+        <div class="line1" style="display: block;">Samra &amp; Jawi</div>
+        <div class="line2" style="display: block;">are getting married</div>
+        <div class="line3" style="display: block;">October 10th, 2015</div>
+      </div>
+    </div>
+    <script>
+      $(".line1, .line2, .line3").hide().each(function(i) {
+        $(this).delay(i*800).fadeIn(800);
+      });
+    </script>
+  </div>
+  <!-- our story -->
+  <div class="page our-story" data-bottom-center="background-color:rgb(105,105,105)" data-top-bottom="background-color:rgb(25,25,25) " id="our-story">
+    <div class="hidden-md hidden-lg mobile">
+      <h1 class="text-center">Our Story</h1>
+      <div class="text-center instruction">Swipe left or right</div>
+    </div>
+    <div class="hidden-sm hidden-xs">
+      <h1 class="text-center">Our Story</h1>
+      <div class="pull-right arrows" id="right-arrow" style="display: block;">
+        <i class="fa fa-arrow-circle-o-right"></i>
+      </div>
+      <div class="pull-left arrows slick-disabled" id="left-arrow" style="display: block;">
+        <i class="fa fa-arrow-circle-o-left"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div id="our-story-slideshow" class="slick-initialized slick-slider">
+        <div class="slick-list draggable" tabindex="0"><div class="slick-track" style="opacity: 1; width: 10220px; transform: translate3d(0px, 0px, 0px);"><div class="keyframe slick-slide slick-active" data-slick-index="0" style="width: 962px;">
+          <i>July 15, 2013</i>
+          <p>The love story of Samra and Jawi started with a simple dinner at Mesale with Weyni and Meki (his cousin and her cousin). Introduced by the cousins these two hit it off right away and it was love at first site.</p>
+        </div><div class="keyframe slick-slide" data-slick-index="1" style="width: 962px;">
+          <i>July 22nd, 23rd and 24th</i>
+          <p>First date at MKs was on July 22nd. The following day, they went out for a second date, where they watched the movie White House Down.  Third date however was at the kategna and Jazzamba where they sealed with first kiss. The two of them fell in love.</p>
+        </div><div class="keyframe slick-slide" data-slick-index="2" style="width: 962px;">
+          <i>July 25th, 2013</i>
+          <p>Samra left for the USA with Jawi’s heart. As soon as Samra landed in the US, she got a new phone and downloaded viber and tango.  Needless to say, they were talking for hours dispite the time difference.</p>
+        </div><div class="keyframe slick-slide" data-slick-index="3" style="width: 962px;">
+          <i>September 13, 2013</i>
+          <p>Samra returns to Addis for work. She was there for two weeks and the romance blossomed.</p>
+        </div><div class="keyframe slick-slide" data-slick-index="4" style="width: 962px;">
+          <i>October 14, 2013</i>
+          <p>Jawi went to china and the love birds continued vibering and tangoing with 12 hr difference between them.</p>
+        </div><div class="keyframe slick-slide" data-slick-index="5" style="width: 962px;">
+          <i>December 18th, 2013</i>
+          <p>Samra surprises Jawi with a trip to Addis for the holidays and his birthday! Jawi introduces her to his dad and uncles. Samra introduces him to her mom and brothers</p>
+        </div><div class="keyframe slick-slide" data-slick-index="6" style="width: 962px;">
+          <i>January 10th 2014</i>
+          <p>Samra returns to the US</p>
+        </div><div class="keyframe slick-slide" data-slick-index="7" style="width: 962px;">
+          <i>February 18th, 2014</i>
+          <p>As it was destined for the two to be together forever --Samra moves with a fabulous job to Addis!</p>
+        </div><div class="keyframe slick-slide" data-slick-index="8" style="width: 962px;">
+          <i>November 24th 2014</i>
+          <p>Jawi got down on one knee and asked for her hand in marriage. She said Yes!!  November 25th, 2014, Jawi and Samra left for the US so he can meet the rest of her family and friends. The big day is going to be on October 10th, 2015 and the love story continues...</p>
+        </div><div class="keyframe slick-slide" data-slick-index="9" style="width: 962px;">
+          <br>
+          <br>
+          <br>
+          <i>~ THE END ~</i>
+        </div></div></div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      <ul class="slick-dots" style="display: block;"><li class="slick-active"><button type="button" data-role="none">1</button></li><li><button type="button" data-role="none">2</button></li><li><button type="button" data-role="none">3</button></li><li><button type="button" data-role="none">4</button></li><li><button type="button" data-role="none">5</button></li><li><button type="button" data-role="none">6</button></li><li><button type="button" data-role="none">7</button></li><li><button type="button" data-role="none">8</button></li><li><button type="button" data-role="none">9</button></li><li><button type="button" data-role="none">10</button></li></ul></div>
+    </div>
+    <script>
+      $('#our-story-slideshow').slick({
+        mobileFirst: true,
+        nextArrow: '#our-story #right-arrow',
+        prevArrow: '#our-story #left-arrow',
+        infinite: false,
+        dots: true
+        
+        // speed: 300,
+        // slidesToShow: 1,
+        // adaptiveHeight: false,
+        // variableWidth: true
+        
+      });
+    </script>
+  </div>
+  <!-- the proposal -->
+  <div class="page proposal" id="the-proposal">
+    <div class="container">
+      <div class="row hidden-sm hidden-xs">
+        <div class="col-md-12 text-center">
+          <h1>The Proposal Story</h1>
+        </div>
+        <div class="btn-group pull-left buttons">
+          <a class="jawi btn btn-default" href="http://localhost:3000/#">Read Jawi's Version</a>
+        </div>
+        <div class="btn-group pull-right buttons">
+          <a class="samra btn btn-default" href="http://localhost:3000/#">Read Samra's Version</a>
+        </div>
+      </div>
+      <div class="row hidden-md hidden-lg mobile">
+        <div class="col-xs-12">
+          <h1 class="text-center">The Proposal</h1>
+        </div>
+        <div class="col-xs-12">
+          <div class="btn-group buttons text-center">
+            <a class="jawi btn btn-default" href="http://localhost:3000/#">Read Jawi's Version</a>
+            <a class="samra btn btn-default" href="http://localhost:3000/#">Read Samra's Version</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="story-groom" style="display: none;">
+            <div class="well text-container">
+              <a class="myclose btn btn-default pull-right" href="http://localhost:3000/#">X</a>
+              <h2>Jawi's Story</h2>
+              <p class="text-left">It happened three days prior to our departure to Atlanta, to meet Samra’s family and friends.  It was a beautiful Friday night on November 21st at Kuriftu Resort &amp; Spa in Debre Zeit which is 47km outside of Addis Ababa. We arrived at our destination around 3pm. I had told Samra that this trip was part of her birthday gift.</p>
+              <p class="text-left">Once we reached our destination we unpacked our stuff and headed towards the water just to relax and later on enjoyed the sauna and steam.  After a few hours we got back to our room to get ready for dinner.  As Samra was preparing I sneaked out to speak with the restaurant manager in order for them to arrange on how I will propose, handed the engagement ring to him, and reserved a table by the water next to a fire place looking up to the moon and the stars.</p>
+              <p class="text-left">As the hour hit 8pm, we made our way to the restaurant as we both were hungry.  We took our designated spots at the restaurant and the waiter came to take our orders. I ordered the Ethiopian Agelgil (Ethiopian food inside a basket) and Samra ordered the grilled fish.  We started to reminisce about the beautiful time we spent together since we met each other as Samra was sipping on her wine and I was drinking beer.  Once the dinner arrived on the table, I started to tell Samra how I loved her and wanted to grow old with her.  I can tell from her face that she was confused by my long emotional speech.  When I was done I asked Samra to open the Agelgil as an honor to taste the food since it’s her birthday week. Once she opened it I took the ring out and was down on my knees and asked Samra “Will you marry me?” at first she was quiet and overwhelmed by the question so I asked her again and the second time and</p>
+              <h3 class="kitiltil">she said Yes!!!!!!!!!!!!!</h3>
+              <br>
+              <a class="myclose" href="http://localhost:3000/#">close</a>
+            </div>
+          </div>
+          <div class="story-bride" style="display: none;">
+            <div class="well text-container">
+              <a class="myclose btn btn-default pull-right" href="http://localhost:3000/#">X</a>
+              <h2>Samra's Story</h2>
+              <p class="text-left story-bride" style="display: none;">I knew Jawi was the one for me since I met him. We clicked and had this amazing chemistry from day one. So I was ready for him to propose when I came to surprise him in December 2014 (5 months after meeting him). So my friends and I have been wondering what is taking him so long!?! I mean everyone knew this was it so it was a matter of time. So by November almost a year later when he asked me to go for a vacation right before we left for the US proposal was the last thing on my mind.  I was just thinking how we could go for a vacation right before our month long get away to the US? What do I say to my boss? It was sudden, but I didn’t think much of it since he had promised we would get away as my birthday gift.</p>
+              <p class="text-left">So we drove to Kuriftu resort and checked- in. Once we dropped our stuff he asked me to go for a walk and he is closely examining the grounds and I am thinking what’s going on with this guy? Little did I know he was trying to find the perfect spot to pop the question! We returned to our room changed and went for a swim/steam/sauna. We returned to the room and got ready for dinner. We sat by the fireside right by the water and it was a beautiful night! We ordered and Jawi went to the bathroom to “wash his hand”, but it really was to hand the ring to the waiter so he can bring it in the Agelgil. Right before we ate Jawi gave a speech about how we met and how happy he has been to have me in his life. When he said he wanted to grow old with me he got very emotional and said well the birthday girl should do the honors and open the Agelgil. I did! I was expecting to taste delicious Ethiopian food like beg wet or doro wet, but instead I saw a jewelery box sitting on flower petals!!</p>
+              <p class="text-left">I was in shock and before I knew it he picked up the box and was down on his knees asking me to marry him!! I swear I froze! He cleared his throat like as if to say “hello! I am down here on my knees”. He repeated “Samra Ashenafi will you marry me?” the second time and a light went off in my head and I said YES!!! The staff and everyone came out clapping to congratulate us. I couldn’t eat or sleep. I was looking for a wifi so I could share the biggest news of my life with my family and friends. I talked, emailed and texted until midnight at the reception. Meantime Jawi went back to the room around 11 PM and slept like a baby. I guess his job was done!</p>
+              <a class="myclose" href="http://localhost:3000/#">close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <script>
+      
+      $(function(){
+        $('.story-groom, .story-bride').hide();
+      
+        $('.jawi').click(function(e){
+          e.preventDefault();
+          $('.story-bride').fadeOut(function(){
+            $('.story-groom').fadeIn();
+          });
+          
+        });
+      
+        $('.samra').click(function(e){
+          e.preventDefault();
+          $('.story-groom').fadeOut(function(){
+            $('.story-bride').fadeIn();
+          });
+        });
+      
+        $('.myclose').click(function(e){
+          e.preventDefault();
+          $('.story-bride, .story-groom').fadeOut();
+        });
+      })
+    </script>
+  </div>
+  <!-- wedding party -->
+  <div class="page wedding-party" id="wedding-party">
+    <div class="wedding-party">
+      <div class="row hidden-sm hidden-xs">
+        <h1>The Wedding Party</h1>
+      </div>
+      <div class="row hidden-md hidden-lg">
+        <div class="page-title">
+          <div class="mobile">The Wedding Party</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 people">
+          <div class="row">
+            <div class="col-sm-4">
+              <img alt="Beza" class="img-circle wedding-party-image gm1" src="./Wedding_files/beza.jpg">
+            </div>
+            <div class="col-sm-6">
+              <span class="gm1-text">
+                <i>Beza Tekola, Washington DC  |  Bridesmaid</i>
+                <p>Beza and I have known each other for 15 years! Our friendship has withstood the test of time and distance. Our journey has been one of love and respect.  Although many miles have separated us once we graduated college we have always remained close by visiting each other whenever we can and through long phone conversations that often leaves us in tears from laughter! Beza has always been and will always be one of my dearest friends.</p>
+              </span>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <img alt="Martha" class="img-circle wedding-party-image gm1" src="./Wedding_files/martha.jpg">
+            </div>
+            <div class="col-sm-6">
+              <span class="gm1-text">
+                <i>Martha Getachew, Addis Ababa  |  Bridesmaid</i>
+                <p>Martha and I first met each other in Atlanta in 2011 and have been friends since. She is a woman with a kind heart and warm smile! Even though she moved to Addis and I was living in ATL you will often find us chatting on gchat no matter what time of the day. Then as faith would have it I also moved to Addis. Terrified of making new friends it’s been a blessing having Martha by my side to have fun with. She is someone who always makes me laugh and I look forward to creating new memories through our new adventures.</p>
+              </span>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <img alt="Meskerem" class="img-circle wedding-party-image gm1" src="./Wedding_files/meskerem.jpg">
+            </div>
+            <div class="col-sm-6">
+              <span class="gm1-text">
+                <i>Meskerm Woldegebrel, Toronto, Canada  |  Bridesmaid</i>
+                <p>Meki and I are cousins! She’s known me almost all my life and understands my journey in life more than others. We have a bond that’s unbroken by distance and I know I can always count on her no matter what. She knows how to make me smile and motivate me through the tough times of life. She’s someone I look up to as an inspiration for strengthen and unconditional love. I am beyond excited to have her celebrate with us our wedding day. Especially since she and Weyni (his cousin) were the ones that introduced us. They will always have a special place in our love story and in our hearts.</p>
+              </span>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="nopic glyphicon glyphicon-user"></div>
+            </div>
+            <div class="col-sm-6">
+              <span class="gm1-text">
+                <i>Fikerte G/Kiros “Kuku”, Seattle  |  Bridesmaid</i>
+                <p>Kuku is not only my future sister-in law, but we have become friends since we first met a year ago. She’s fun to be around and has an easy going personality.  I first met her in Bahir Dar when she came to surprise her childhood friend for his wedding. She’s fun, loving, and considerate. I quickly found out we are the same size and can share dresses and shoes!! It’s like finding my twin sister! I am excited to call her my family and feel blessed to have been accepted with open arms by her and the rest of Jawi’s family.</p>
+              </span>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <img alt="Samuel" class="img-circle wedding-party-image gm1" src="./Wedding_files/samuel.jpg">
+            </div>
+            <div class="col-sm-6">
+              <span class="gm1-text">
+                <i>Sami Haile, Delaware  |  Groomsmen</i>
+                <p>I knew Sami since I was four and a half years old.  We grew up together and went to St. Joseph school.  We saw each other daily until I left for the US. Despite the distance we kept in touch. When I told Sammy I had met the “one” he was beyond excited for me. I can honestly say Sami is more than my best friend. He is more like my brother.</p>
+              </span>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <img alt="Dawit" class="img-circle wedding-party-image gm1" src="./Wedding_files/dawit.jpg">
+            </div>
+            <div class="col-sm-6">
+              <span class="gm1-text">
+                <i>Dawit "Shide" Solomon, Addis Ababa  |  Groomsmen</i>
+                <p>I have known Shide my whole life, he is my first cousin.  He is smart and funny. Shide is not only someone I can rely on for good advice in life but he is my closest friend and confident.  He was one of the first family members I introduced Samra to and he was extremely happy for me that I have found my future wife.  It’s great to have him be part of our special day.</p>
+              </span>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <img alt="Abrish" class="img-circle wedding-party-image gm1" src="./Wedding_files/Abrish.jpg">
+            </div>
+            <div class="col-sm-6">
+              <span class="gm1-text">
+                <i>Abrahm Tesfa Kiros, Addis Ababa  |  Groomsmen</i>
+                <p>Abrish is my cousin and we grew up together. Even at a young age I have always known I can rely on him for great advice and moral support. He’s always positive, generous, and thoughtful. Abrish is very smart and motivated and I am always inspired when I am around him. He’s always laughing and enjoying life to the fullest. When he met Samra early on in our relationship he was very excited for me and always encouraged me to take the next step.</p>
+              </span>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <img alt="Yoni" class="img-circle wedding-party-image gm1" src="./Wedding_files/Yoni.jpg">
+            </div>
+            <div class="col-sm-6">
+              <span class="gm1-text">
+                <i>Yoni Solomon, Seattle |  Groomsmen</i>
+                <p>Yonie is my cousin and someone I am blessed to call my friend as well.  We grew up together having fun! When we were teenagers growing up in Seattle we always hung out together. To this day Yonie is someone I confide in. I admire his creativity and his ability to think outside the box.</p>
+              </span>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page photo-gallery" id="photo-gallery">
+    <div id="slideshow1" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px;" jssor-slider="true">
+      <!-- Slides Container -->
+      
+    <div style="position: absolute; top: 0px; left: 0px; width: 600px; height: 300px; transform-origin: 0px 0px 0px; transform: scale(1);"><div class="" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px; display: block; overflow: visible;"><div style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px; z-index: 0;" u="slides"><div style="position: absolute; z-index: 0; pointer-events: none; left: -600px; top: 0px;"></div></div><div style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px; z-index: 0;" u="slides"><div style="width: 600px; height: 300px; top: 0px; left: 0px; position: absolute; opacity: 0; display: none; background-color: rgb(0, 0, 0);"></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="20141203 170552" src="./Wedding_files/20141203_170552.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="20141213 132405" src="./Wedding_files/20141213_132405.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Family pics" src="./Wedding_files/Family-Pics.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Dsc 0900" src="./Wedding_files/DSC_0900.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Scan0003" src="./Wedding_files/scan0003.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Img 0004" src="./Wedding_files/IMG_0004.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Img 0362" src="./Wedding_files/IMG_0362.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="20141213 150015" src="./Wedding_files/20141213_150015.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Sp4" src="./Wedding_files/SP4.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Img 3894" src="./Wedding_files/IMG_3894.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Dsc 1511" src="./Wedding_files/DSC_1511.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Dsc 2068" src="./Wedding_files/DSC_2068.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Scan0001" src="./Wedding_files/scan0001.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Scan0004" src="./Wedding_files/scan0004.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Dsc 2082" src="./Wedding_files/DSC_2082.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Dsc 2097" src="./Wedding_files/DSC_2097.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;" jssor-content="true"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: 0px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Sp8" src="./Wedding_files/SP8.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: 600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Scan0002" src="./Wedding_files/scan0002.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Scan0005" src="./Wedding_files/scan0005.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Scan0006" src="./Wedding_files/scan0006.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;"></div></div>
+        <div style="width: 600px; height: 300px; top: 0px; left: -600px; position: absolute; overflow: hidden; transform: perspective(2000px);"><img alt="Scan0007" src="./Wedding_files/scan0007.jpg" u="image" border="0" jssor-content="true" style="width: 600px; height: 300px; top: 0px; left: 0px; transform: perspective(2000px); position: absolute;"><div style="width: 600px; height: 300px; top: 0px; left: 0px; z-index: 1000; display: none;"></div></div>
+      </div></div></div></div>
+    <script>
+        jQuery(document).ready(function ($) {
+            var options = { $AutoPlay: true };
+            var jssor_slider1 = new $JssorSlider$('slideshow1', options);
+        });
+    </script>
+    <!-- #slideshow-control.hidden-sm.hidden-xs -->
+    <!-- #right-arrow.pull-right.arrows -->
+    <!-- %i.fa.fa-arrow-circle-o-right.nextBtn -->
+    <!-- /%i.nextBtn.fa.fa-6.fa-chevron-circle-right -->
+    <!-- #left-arrow.pull-left.arrows -->
+    <!-- %i.fa.fa-arrow-circle-o-left.prevBtn -->
+    <!-- /%i.prevBtn.fa.fa-6.fa-chevron-circle-left -->
+    <!-- #slideshow -->
+    <!-- %div= image_tag 'gallery/final/20141203_170552.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/20141213_132405.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/Family-Pics.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/DSC_0900.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/scan0003.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/IMG_0004.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/IMG_0362.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/20141213_150015.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/SP4.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/IMG_3894.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/DSC_1511.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/DSC_2068.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/scan0001.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/scan0004.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/DSC_2082.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/DSC_2097.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/SP8.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/scan0002.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/scan0005.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/scan0006.jpg', {u: 'image'} -->
+    <!-- %div= image_tag 'gallery/final/scan0007.jpg', {u: 'image'} -->
+    <!-- :javascript -->
+    <!-- $('#photo-gallery #slideshow').slick({ -->
+    <!-- mobileFirst: true, -->
+    <!-- prevArrow: '#photo-gallery #left-arrow', -->
+    <!-- nextArrow: '#photo-gallery #right-arrow', -->
+    <!-- adaptiveHeight: true, -->
+    <!-- infinite: true, -->
+    <!-- slidesToShow: 1 -->
+    <!-- }); -->
+  </div>
+  <div class="page venue" id="venue">
+    <div class="hotel-info" data-bottom-center="background-color:rgba(255,0,0,0.0)" data-top-bottom="background-color:rgba(0,0,0,0.9) ">
+      <h1 class="text-center page-title">Venue Info</h1>
+      <h1 class="text-center">Hilton Hotel</h1>
+      <div class="address text-center">
+        Menelik II Ave,
+        <br>
+        Addis Ababa 1164, Ethiopia
+        <br>
+        +251 11 517 0000
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-3 hidden-sm hidden-xs">
+        <div class="text-content" data-bottom-bottom="transform:scale(1)" data-bottom-top="transform:scale(1.5)">
+          <h3>Samra Ashenafi &amp; Jawi Girma</h3>
+          <span>together with their families</span>
+          <p>request the honor of your presence as they join together in marriage on the evening of</p>
+          <div class="span date">Saturday October 10th, 2015.</div>
+          <p>The wedding reception will be held at the</p>
+          <div class="span date">Hilton Hotel, Addis Abeba, Ethiopia.</div>
+        </div>
+      </div>
+      <div class="col-xs-12 hidden-md hidden-lg">
+        <div class="text-content-mobile">
+          <div class="text-center">
+            <h3>Samra Ashenafi &amp; Jawi Girma</h3>
+            <span>together with their families</span>
+            <p>request the honor of your presence as they join together in marriage on the evening of</p>
+            <div class="span date">Saturday October 10th, 2015.</div>
+            <p>The wedding reception will be held at the</p>
+            <div class="span date">Hilton Hotel, Addis Abeba, Ethiopia.</div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+    <br>
+    <br>
+    <br>
+    <div class="col-md-12 col-md-offset-5">
+      <a class="btn btn-primary btn-lg sign-guestbook" href="http://localhost:3000/guestbooks/new">Sign their Guestbook</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+</div>
+<script>
+  $(function(){
+    //var s = skrollr.init();
+  });
+</script>
+
+
+
+
+</body></html>

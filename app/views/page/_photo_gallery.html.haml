@@ -1,40 +1,109 @@
-#slideshow-control.hidden-sm.hidden-xs
-  #right-arrow.pull-right.arrows
-    %i.fa.fa-arrow-circle-o-right.nextBtn
-    /%i.nextBtn.fa.fa-6.fa-chevron-circle-right
-  #left-arrow.pull-left.arrows
-    %i.fa.fa-arrow-circle-o-left.prevBtn
-    /%i.prevBtn.fa.fa-6.fa-chevron-circle-left
-#slideshow
-  %div= image_tag 'gallery/final/20141203_170552.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/20141213_132405.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/Family-Pics.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/DSC_0900.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/scan0003.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/IMG_0004.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/IMG_0362.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/20141213_150015.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/SP4.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/IMG_3894.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/DSC_1511.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/DSC_2068.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/scan0001.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/scan0004.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/DSC_2082.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/DSC_2097.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/SP8.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/scan0002.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/scan0005.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/scan0006.jpg', {u: 'image'}
-  %div= image_tag 'gallery/final/scan0007.jpg', {u: 'image'}
+#slideshow1{:style => "position: relative; top: 0px; left: 0px; width: 600px; height: 300px;"}
+  / Slides Container
+  %div{:style => "cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;", :u => "slides"}
+    %div= image_tag 'gallery/final/20141203_170552.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/20141213_132405.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/Family-Pics.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/DSC_0900.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/scan0003.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/IMG_0004.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/IMG_0362.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/20141213_150015.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/SP4.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/IMG_3894.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/DSC_1511.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/DSC_2068.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/scan0001.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/scan0004.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/DSC_2082.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/DSC_2097.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/SP8.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/scan0002.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/scan0005.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/scan0006.jpg', {u: 'image'}
+    %div= image_tag 'gallery/final/scan0007.jpg', {u: 'image'}
+
 
 :javascript
+    jQuery(document).ready(function ($) {
+        var options = { $AutoPlay: true };
+        var jssor_slider1 = new $JssorSlider$('slideshow1', options);
 
-  $('#photo-gallery #slideshow').slick({
-    mobileFirst: true,
-    prevArrow: '#photo-gallery #left-arrow',
-    nextArrow: '#photo-gallery #right-arrow',
-    adaptiveHeight: true,
-    infinite: true,
-    slidesToShow: 1
-  });
+        function ScaleSlider() {
+            var parentWidth = $('#slideshow1').parent().width();
+            if (parentWidth) {
+                jssor_slider1.$ScaleWidth(parentWidth);
+            }
+            else
+                window.setTimeout(ScaleSlider, 30);
+        }
+        //Scale slider after document ready
+        ScaleSlider();
+                                        
+        //Scale slider while window load/resize/orientationchange.
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ #slideshow-control.hidden-sm.hidden-xs
+/   #right-arrow.pull-right.arrows
+/     %i.fa.fa-arrow-circle-o-right.nextBtn
+/     /%i.nextBtn.fa.fa-6.fa-chevron-circle-right
+/   #left-arrow.pull-left.arrows
+/     %i.fa.fa-arrow-circle-o-left.prevBtn
+/     /%i.prevBtn.fa.fa-6.fa-chevron-circle-left
+/ #slideshow
+/   %div= image_tag 'gallery/final/20141203_170552.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/20141213_132405.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/Family-Pics.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/DSC_0900.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/scan0003.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/IMG_0004.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/IMG_0362.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/20141213_150015.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/SP4.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/IMG_3894.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/DSC_1511.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/DSC_2068.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/scan0001.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/scan0004.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/DSC_2082.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/DSC_2097.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/SP8.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/scan0002.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/scan0005.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/scan0006.jpg', {u: 'image'}
+/   %div= image_tag 'gallery/final/scan0007.jpg', {u: 'image'}
+
+/ :javascript
+
+/   $('#photo-gallery #slideshow').slick({
+/     mobileFirst: true,
+/     prevArrow: '#photo-gallery #left-arrow',
+/     nextArrow: '#photo-gallery #right-arrow',
+/     adaptiveHeight: true,
+/     infinite: true,
+/     slidesToShow: 1
+/   });
