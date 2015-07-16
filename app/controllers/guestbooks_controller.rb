@@ -1,5 +1,4 @@
 class GuestbooksController < ApplicationController
-	before_action :stop_music
 	
 	def index
 		@admin = (params[:admin] == 'true')

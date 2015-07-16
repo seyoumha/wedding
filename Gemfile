@@ -6,6 +6,7 @@ gem 'haml-rails'
 gem 'will_paginate', '~> 3.0.6'
 gem "font-awesome-rails"
 gem 'jplayer-rails'
+gem 'pry'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 

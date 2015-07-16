@@ -19,4 +19,5 @@
 //= require page
 //= require slick.min
 //= require jquery.jplayer
+// require skrollr.min
 // require_tree .

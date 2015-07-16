@@ -4,8 +4,7 @@
   .page.home#home
     = render partial: 'home'
   /our story
-  .page.our-story#our-story
-    =# render partial: 'our_story'
+  .page.our-story#our-story{data: { top_bottom: 'background-color:rgb(25,25,25) ', bottom_center: 'background-color:rgb(105,105,105)'}} 
     = render partial: 'our_story2'
   /the proposal
   .page.proposal#the-proposal
@@ -18,3 +17,7 @@
   .page.venue#venue
     = render partial: 'venue'
   
+:javascript
+  $(function(){
+    //var s = skrollr.init();
+  });

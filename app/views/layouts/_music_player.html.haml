@@ -5,13 +5,7 @@
       .jp-controls
         %i.fa.fa-play.jp-play{:role => "button", :tabindex => "0"} 
         %i.fa.fa-pause.jp-pause{:role => "button", :tabindex => "0"} 
-        / %button.jp-play{:role => "button", :tabindex => "0"} play
-    .jp-no-solution
-      %span Update Required
-      To play the media you will need to either update your browser to a recent version or update your
-      = succeed "." do
-        %a{:href => "http://get.adobe.com/flashplayer/", :target => "_blank"} Flash plugin
-  
+
 :javascript
 
   $(function(){
@@ -32,6 +26,6 @@
       remainingDuration: true,
       toggleDuration: true,
       autoPlay: true,
-      volume: 0.5
+      volume: 0.25
     });
   });
