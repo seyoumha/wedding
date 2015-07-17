@@ -1,34 +1,34 @@
 .hidden-md.hidden-lg
   .text-center.instruction Swipe left or right
-#outer{:style => "width: 80%; height: 80%; margin: 0 auto"}
-  #slideshow1{:style => "position: relative; top: 0px; left: 0px; width: 600px; height: 400px;"}
-    / Slides Container
-    %div{:style => "cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 400px;", :u => "slides"}
-      %div= image_tag 'gallery/3x2/20141203_170552.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/20141213_132405.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/Family-Pics.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/DSC_0900.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/scan0003.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/IMG_0004.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/IMG_0362.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/20141213_150015.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/SP4.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/IMG_3894.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/DSC_1511.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/DSC_2068.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/scan0001.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/scan0004.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/DSC_2082.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/DSC_2097.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/SP8.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/scan0002.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/scan0005.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/scan0006.jpg', {u: 'image'}
-      %div= image_tag 'gallery/3x2/scan0007.jpg', {u: 'image'}
-      
-  %span.jssora10l{:style => "top: 300px; left: 140px;", :u => "arrowleft"}
+/#outer{:style => "width: 80%; height: 80%; margin: 0 auto"}
+#slideshow1{:style => "position: relative; top: 0px; left: 0px; width: 600px; height: 400px;"}
+  / Slides Container
+  %div{:style => "cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 400px;", :u => "slides"}
+    %div= image_tag 'gallery/3x2/20141203_170552.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/20141213_132405.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/Family-Pics.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/DSC_0900.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/scan0003.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/IMG_0004.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/IMG_0362.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/20141213_150015.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/SP4.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/IMG_3894.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/DSC_1511.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/DSC_2068.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/scan0001.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/scan0004.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/DSC_2082.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/DSC_2097.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/SP8.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/scan0002.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/scan0005.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/scan0006.jpg', {u: 'image'}
+    %div= image_tag 'gallery/3x2/scan0007.jpg', {u: 'image'}
+    
+  %span.jssora10l{:style => "top: 123px; left: 8px;", :u => "arrowleft"}
   
-  %span.jssora10r{:style => "top: 300px; right: 140px;", :u => "arrowright"}
+  %span.jssora10r{:style => "top: 123px; right: 8px;", :u => "arrowright"}
 
 
 :javascript
@@ -38,7 +38,8 @@
       $AutoPlay: true,
       $ArrowNavigatorOptions: {
         $Class: $JssorArrowNavigator$,
-        $ChanceToShow: 2
+        $ChanceToShow: 2,
+        $AutoCenter: 1
       } 
     };
     
