@@ -15,7 +15,10 @@
 //= require bootstrap
 //= require turbolinks
 //= require ScrollMagic.min
-//= require jssor.slider.mini
+
+//= require jssor
+//= require jssor.slider
+
 //= require page
 //= require slick.min
 //= require jquery.jplayer
