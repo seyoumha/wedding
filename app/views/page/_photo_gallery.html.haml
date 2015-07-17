@@ -1,3 +1,5 @@
+.hidden-md.hidden-lg
+  .text-center.instruction Swipe left or right
 #outer{:style => "width: 80%; height: 80%; margin: 0 auto"}
   #slideshow1{:style => "position: relative; top: 0px; left: 0px; width: 600px; height: 400px;"}
     / Slides Container
@@ -23,6 +25,10 @@
       %div= image_tag 'gallery/3x2/scan0005.jpg', {u: 'image'}
       %div= image_tag 'gallery/3x2/scan0006.jpg', {u: 'image'}
       %div= image_tag 'gallery/3x2/scan0007.jpg', {u: 'image'}
+      / Arrow Left
+      %span.jssora01l{:style => "top: 123px; left: 8px;", :u => "arrowleft"}
+      / Arrow Right
+      %span.jssora01r{:style => "top: 123px; right: 8px;", :u => "arrowright"}
 
 
 :javascript
