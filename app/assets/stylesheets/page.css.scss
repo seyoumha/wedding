@@ -482,12 +482,13 @@
   
   .photo-gallery{
 /*    padding-top: 50px;
-*/    width: 100%;
+*/    width: 90%;
+    margin: 0 auto;
     
     position: relative;
     overflow: hidden;
     text-align: center;
-    background-color: #21246;
+    background-color: #4B4855;
     background-image: asset-data-url('dark_embroidery.png');
     background-repeat: repeat;
     background-position: fixed;
