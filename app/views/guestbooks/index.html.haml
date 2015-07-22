@@ -7,7 +7,7 @@
             = flash[:notice] 
         .row
           .col-md-6.col-md-offset-1
-            %h2.text-right Guest books  
+            %h2.text-right Guest book  
             - if @guestbooks.present?
               = will_paginate @guestbooks, class: 'text-right paginate'
               - @guestbooks.reverse.each do |g|
