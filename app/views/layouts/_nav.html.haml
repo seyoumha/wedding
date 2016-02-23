@@ -17,14 +17,14 @@
         %li
           =link_to 'Wedding Party', "#{root_url}#wedding-party"
         %li
-          =link_to 'Photo Gallery', "#{root_url}#photo-gallery"
-        %li
           =link_to 'Venue Info', "#{root_url}#venue"
         %li
           =link_to 'Guestbook', new_guestbook_path
+        / %li
+        /   =link_to 'Wedding Pictures', wedding_pictures_path, {style: "color: pink;"} 
 
       .navbar-right
-        = render 'layouts/music_player' if !(controller_name == 'guestbooks')
+        = render 'layouts/music_player' if !(controller_name == 'guestbooks') && !(controller_name == 'page' && action_name == 'wedding_pictures')
         
 :javascript
   $('.nav li a').on('click', function() {

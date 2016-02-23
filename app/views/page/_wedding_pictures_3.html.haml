@@ -1,0 +1,54 @@
+.slide= image_tag 'wedding-pictures-3/KOR_0020-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KOR_0033-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KOR_0046-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KOR_8488-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KOR_8842-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KOR_8875-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KOR_0017-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KOR_8955-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KOR_8998-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KOR_9051-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KOR_9443-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KOR_9608-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KOR_9742-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KORA5513-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KORA5816-2.jpg'
+.slide= image_tag 'wedding-pictures-3/KORA5831-2.jpg'
+
+
+:javascript
+  $(document).ready(function() {
+      $.fn.fullpage({
+          verticalCentered: true,
+          resize : true,
+          scrollingSpeed: 700,
+          easing: 'easeInQuart',
+          menu: false,
+          navigation: false,
+          navigationPosition: 'right',
+          navigationTooltips: ['firstSlide', 'secondSlide'],
+          slidesNavigation: true,
+          slidesNavPosition: 'bottom',
+          loopBottom: false,
+          loopTop: false,
+          loopHorizontal: true,
+          autoScrolling: true,
+          scrollOverflow: false,
+          css3: false,
+          paddingTop: '4em',
+          paddingBottom: '10px',
+          fixedElements: '#element1, .element2',
+          normalScrollElements: '#element1, .element2',
+          keyboardScrolling: true,
+          touchSensitivity: 15,
+          continuousVertical: false,
+          animateAnchor: true,
+
+          //events
+          onLeave: function(index, direction){},
+          afterLoad: function(anchorLink, index){},
+          afterRender: function(){},
+          afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+          onSlideLeave: function(anchorLink, index, slideIndex, direction){}
+      });
+    });

@@ -1,0 +1,27 @@
+= content_for :head do
+  = javascript_include_tag "jquery.fullPage.min"
+  = stylesheet_link_tag 'jquery.fullPage'
+
+.content
+  .wed-pic.text-center
+    #gallery-nav
+      .btn-group
+        %a.btn.btn-md{href: '#gal1', :role => "button"} Short Video
+        %a.btn.btn-md{href: '#gal2', :role => "button"} Morning Pictures
+        %a.btn.btn-md{href: '#gal3', :role => "button"} Park Pictures 
+        %a.btn.btn-md{href: '#gal4', :role => "button"} Reception Pictures
+
+    #fullpage.center-block
+      .section=render partial: 'wedding_video'
+      .section=render partial: 'wedding_pictures_1'
+      .section=render partial: 'wedding_pictures_2'
+      .section=render partial: 'wedding_pictures_3'
+      
+:javascript
+    $(document).ready(function(){
+      $('#fullpage').fullpage({
+        anchors: ["gal1","gal2","gal3","gal4"]
+        
+      });
+    });
+

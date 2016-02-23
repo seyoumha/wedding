@@ -13,8 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require turbolinks
-//= require ScrollMagic.min
+// require turbolinks
 
 //= require jssor
 //= require jssor.slider
@@ -24,3 +23,15 @@
 //= require jquery.jplayer
 // require skrollr.min
 // require_tree .
+
+// require TweenMax.min
+// require TimelineMax.min
+
+// require ScrollMagic
+// require jquery.gsap.min
+// require animation.gsap
+// require debug.addIndicators
+
+
+
+

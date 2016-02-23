@@ -1,0 +1,72 @@
+.slide= image_tag 'wedding-pictures-1/KOR_4396.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5328.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5357.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5374.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5390.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5406.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5416.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5481.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5490.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_52321.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5508.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5514.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5524.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5649.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5887.jpg'
+.slide= image_tag 'wedding-pictures-1/KOR_5905.jpg'
+.slide= image_tag 'wedding-pictures-1/KORA3783-2.jpg'
+.slide= image_tag 'wedding-pictures-1/KORA3871-2.jpg'
+.slide= image_tag 'wedding-pictures-1/KORA4104-2.jpg'
+.slide= image_tag 'wedding-pictures-1/KORA4115-2.jpg'
+.slide= image_tag 'wedding-pictures-1/KORA4153-2.jpg'
+ 
+
+
+
+
+
+    
+
+
+
+
+    
+
+:javascript
+
+
+  $(document).ready(function() {
+    $.fn.fullpage({
+        verticalCentered: true,
+        resize : true,
+        scrollingSpeed: 700,
+        easing: 'easeInQuart',
+        menu: false,
+        navigation: false,
+        navigationPosition: 'right',
+        navigationTooltips: ['firstSlide', 'secondSlide'],
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        autoScrolling: true,
+        scrollOverflow: false,
+        css3: false,
+        paddingTop: '4em',
+        paddingBottom: '10px',
+        fixedElements: '#element1, .element2',
+        normalScrollElements: '#element1, .element2',
+        keyboardScrolling: true,
+        touchSensitivity: 15,
+        continuousVertical: false,
+        animateAnchor: true,
+
+        //events
+        onLeave: function(index, direction){},
+        afterLoad: function(anchorLink, index){},
+        afterRender: function(){},
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        onSlideLeave: function(anchorLink, index, slideIndex, direction){}
+    });
+  });

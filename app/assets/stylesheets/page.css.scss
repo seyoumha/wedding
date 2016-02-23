@@ -15,6 +15,7 @@
 // font-family: 'Shadows Into Light Two', cursive;
 // font-family: 'Raleway', sans-serif;
 
+
 .instruction{
   font-family: 'PT Sans', sans-serif;
   
@@ -38,7 +39,7 @@
 }
 #navbar{
   font-family: 'Wire One', cursive; 
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 #music-player{
@@ -50,7 +51,6 @@
 
 .content{
   .page{
-    /*padding-top: 50px;*/
     font-size: 1.1em;
     
     h1{
@@ -383,7 +383,6 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    /*background-color: #AB0058;*/
 
     background: -webkit-linear-gradient(#E82C0C, #FF530D); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#E82C0C, #FF530D); /* For Opera 11.1 to 12.0 */
@@ -423,21 +422,8 @@
 
   }
   #wedding-party{
-    /*h1{font-family: 'Great Vibes', sans-serif; font-size: 4.5em; color:#fff;letter-spacing: 4px;}
-    color: black;*/
-
-    /*font-family: 'PT Sans', sans-serif; */
-    /*font-family: 'Righteous', cursive;*/
+    
     font-family: 'Indie Flower', cursive;
-    /*
-    font-family: 'Ubuntu Mono' ;
-    
-    
-    
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Shadows Into Light Two', cursive;
-    font-family: 'Raleway', sans-serif;
-    */
 
     hr{
       margin: 70px 0;
@@ -480,9 +466,72 @@
     }  
   }
   
+
+section{
+  height: 100vh;
+  background-color: #E7FFC9;
+}
+
+#gallery-nav{
+  color: #D8F0FF;
+  font-size: 2em;
+  position: fixed;
+  z-index: 199;
+  display: block;
+/*  border: 1px solid red;
+*/  margin: 50px auto;
+  width: 100%;
+/*  left:25%;
+*/  a{ background-color: #ff33cb; color: #fff; opacity: .6;}
+
+}
+
+.wed-pic{
+  background-image: asset-data-url('dark_embroidery.png');
+  .slide img{
+    width: 100%;
+    padding-top: 40px;
+  }
+
+}
+.wimg{
+  width: 100%;
+}
+
+
+  .wedding-pictures-1{
+    background-color: #FA8258;
+    width: 100%;
+    color: black;
+    vertical-align: center;
+    height: 100%;
+    
+  }
+  .wedding-pictures-2{
+    background-color: #F78181;
+    height: 100%;
+    width: 100%;
+    vertical-align: center;
+  }
+  .wedding-pictures-3{
+    background-color: #FA58F4;
+    height: 100%;
+    width: 100%;
+    vertical-align: center;
+  }
+  .wedding-pictures-4{
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    vertical-align: center;
+  }
+
+  .slide img{
+    wdith: 100%;
+  }
+
   .photo-gallery{
-/*    padding-top: 50px;
-*/    width: 100%;
+   width: 100%;
     
     position: relative;
     overflow: hidden;
@@ -499,7 +548,6 @@
     .jssora10l, .jssora10r {
         display: block;
         position: absolute;
-        /* size of arrow element */
         width: 28px;
         height: 40px;
         cursor: pointer;
@@ -513,15 +561,7 @@
     .jssora10l.jssora10ldn { background-position: -256px -39px; }
     .jssora10r.jssora10rdn { background-position: -316px -39px; }
 
-    /*#slideshow{
-      border: 1px solid #000;
-      width: 740px;
-      margin: 20px auto 80px auto;
-      background-color: #000 ;
-
-    }
-
-*/
+    
     .instruction{
         color: white;
         /*height: 10px;
@@ -575,12 +615,7 @@
         font-family: 'Ubuntu Mono';
         color: #E2B9A0;
 
-        /*font-family: 'PT Sans', sans-serif;*/
-        /*font-family: 'Righteous', cursive;*/
-        /*font-family: 'Indie Flower', cursive;*/
-        /*font-family: 'Raleway', sans-serif;*/
-        /*font-family: 'Shadows Into Light Two', cursive;*/
-        /*font-family: 'Raleway', sans-serif;*/
+        
       }
     }
   
@@ -746,3 +781,6 @@
   }
   
 }
+
+
+ 

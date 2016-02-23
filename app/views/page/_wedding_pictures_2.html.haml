@@ -1,0 +1,71 @@
+.slide= image_tag 'wedding-pictures-2/KOR_4688.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_4706.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_4789.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_6385.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_6433.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_6962.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_6970.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_6990.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_7007.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_7036.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_7057.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_7081.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_7098.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_7111.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_7117.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_7123.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_7127.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_7131.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_7158.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_7172.jpg'
+.slide= image_tag 'wedding-pictures-2/KOR_7198.jpg'
+.slide= image_tag 'wedding-pictures-2/KORA4649-2.jpg'
+.slide= image_tag 'wedding-pictures-2/KORA4660-2.jpg'
+.slide= image_tag 'wedding-pictures-2/KORA5030-2.jpg'
+
+
+
+
+
+
+
+:javascript
+
+
+  $(document).ready(function() {
+    $.fn.fullpage({
+        verticalCentered: true,
+        resize : true,
+        scrollingSpeed: 700,
+        easing: 'easeInQuart',
+        menu: false,
+        navigation: false,
+        navigationPosition: 'right',
+        navigationTooltips: ['firstSlide', 'secondSlide'],
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        autoScrolling: true,
+        scrollOverflow: false,
+        css3: false,
+        paddingTop: '4em',
+        paddingBottom: '10px',
+        fixedElements: '#element1, .element2',
+        normalScrollElements: '#element1, .element2',
+        keyboardScrolling: true,
+        touchSensitivity: 15,
+        continuousVertical: false,
+        animateAnchor: true,
+
+        //events
+        onLeave: function(index, direction){},
+        afterLoad: function(anchorLink, index){},
+        afterRender: function(){},
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        onSlideLeave: function(anchorLink, index, slideIndex, direction){}
+    });
+  });
+
+      
