@@ -20,8 +20,8 @@
           =link_to 'Venue Info', "#{root_url}#venue"
         %li
           =link_to 'Guestbook', new_guestbook_path
-        / %li
-        /   =link_to 'Wedding Pictures', wedding_pictures_path, {style: "color: pink;"} 
+        %li
+          =link_to 'Wedding Pictures', wedding_pictures_path, {style: "color: pink;"} 
 
       .navbar-right
         = render 'layouts/music_player' if !(controller_name == 'guestbooks') && !(controller_name == 'page' && action_name == 'wedding_pictures')
