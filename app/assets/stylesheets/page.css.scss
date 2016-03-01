@@ -39,7 +39,7 @@
 }
 #navbar{
   font-family: 'Wire One', cursive; 
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 #music-player{
@@ -481,16 +481,28 @@ section{
 */  margin: 50px auto;
   width: 100%;
 /*  left:25%;
-*/  a{ background-color: #ff33cb; color: #fff; opacity: .6;}
+*/  a{ background-color: #ff33cb; color: #fff; opacity: .6;
+      font-size: 1em;
+    }
 
+
+}
+#fullpage .section{
+  @media (max-width: 600px) {
+        .fp-controlArrow{
+            display:none !important;
+        }
+  }
 }
 
 .wed-pic{
   background-image: asset-data-url('dark_embroidery.png');
+  font-family: 'Wire One', sans-serif;
   .slide img{
     width: 100%;
     padding-top: 40px;
   }
+
 
 }
 .wimg{
